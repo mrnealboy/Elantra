@@ -1,0 +1,548 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>ICU (Integrated Central Control Unit) Software Update (Service Campaign T8T) (SCT8T) — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/503.html">Campaigns</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24082.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24082.html#Body%20Interior/">Body Interior</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24091.html">ICU (Integrated Central Control Unit) Software Update (Service Campaign T8T) (SCT8T)</a></div><div class="main"><h1>ICU (Integrated Central Control Unit) Software Update (Service Campaign T8T) (SCT8T)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Elantra N Line, Automatic DCT Trans, which is a different variant/trim than selected.</div>Publication date: 2022-10-31<br>Reference number: SCT8T<br>Supersedes refnos: 22-01-076H, SC T8T<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ICU (INTEGRATED CENTRAL CONTROL UNIT) SOFTWARE UPDATE (SERVICE CAMPAIGN T8T)</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>ICU (INTEGRATED CENTRAL CONTROL UNIT) SOFTWARE UPDATE (SERVICE CAMPAIGN T8T)</h2>
+    <h2>SERVICE CAMPAIGN BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): 22-01-076H-1, Date of Issue: 
+				October 31, 2022<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HYUNDAI:</td>
+          <td>2021 Elantra (CN7); 2021-22 Elantra (CN7a); 2021-22 Elantra Hybrid (CN7 HEV)</td>
+        </tr>
+        <tr>
+          <td class="clsTDescTitle">GROUP:</td>
+          <td>CAMPAIGN</td>
+        </tr>
+      </table>Superceded Bulletin(s): 22-01-076H, Date of Issue: 
+			October 01, 2022</div><h3>REVISION HISTORY</h3>
+    
+    <p><span class="clsEmphBOLDITAL">This TSB supersedes TSB# 22-01-076H to include ROM ID 4.01 for Elantra (CN7a). </span></p>
+    <div class="IMPORTANT"><span class="IMPORTANT_label">
+									IMPORTANT:
+								</span><span>Dealers must perform this service campaign on all affected vehicles prior to customer retail delivery and whenever an affected vehicle is in the shop for any maintenance or repair.<br>Access the &quot;Vehicle Information&quot; screen (VIS) via WEBDCS to identify open campaigns.</span></div><h3>DESCRIPTION</h3>
+    
+    <p>Some 2021 ~ 2022MY Elantra (CN7, CN7a, CN7 HEV) vehicles may exhibit a condition with multiple warning lights displayed on the instrument cluster and various symptoms; multiple DTCs (Diagnostic Trouble Code), reduction in power steering assist, and not able to shift out of Park. Possible DTCs set are:</p>
+    <ul class="BULLET">
+      <li>C181287 - CAN Time-out Gateway</li>
+      <li>C181208 - CAN Time-out Gateway</li>
+      <li>C180581 - LKAS CAN Signal Error</li>
+      <li>C181887 - CAN Time-out BCA</li>
+      <li>B109052 - TCU Missing Error</li>
+    </ul>
+    <p>This bulletin provides the service procedure to update the ICU (Integrated Central Control Unit) software to resolve the conditions stated above.</p><a name="S245722297920221111000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G15047506">
+              <div class="imageHeader"><a name="S10530308552022100300000"></a></div><img alt="G15047506" src="../images/G15047506.png" name="G15047506"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span class="clsEmphBOLD">Applicable Vehicles: </span></p>
+    <p>Certain 2021MY Elantra (CN7) vehicles produced from 9/12/2020 - 6/01/2021*.</p>
+    <p>Certain 2021~22MY Elantra (CN7a) vehicles produced from 9/25/2020 - 9/27/2021**.</p>
+    <p>Certain 2021~22MY Elantra Hybrid (CN7 HEV) vehicles produced from 12/15/2020 - 8/11/2021*.</p>
+    <p>*VIN starting with KMH</p>
+    <p>**VIN starting with 5NP</p><h3>WARRANTY INFORMATION</h3>
+    <a name="S21795474512022100300000"></a><div class="clsTableTitle">WARRANTY INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">OP. CODE</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">OPERATION</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">OP. TIME</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSAL PART</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">NATURE</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra/Elantra Hybrid (CN7/CN7 HEV)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">20D073R0</td>
+          <td valign="TOP" align="center" class="clsCellNormal">ICU Upgrade</td>
+          <td valign="TOP" align="center" class="clsCellNormal">0.3 M/H</td>
+          <td valign="TOP" align="center" class="clsCellNormal">91951-AA010 (CN7) 91950-BY110 (CN7 HEV)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">I14</td>
+          <td valign="TOP" align="center" class="clsCellNormal">ZZ3</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7a)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">20D073R1</td>
+          <td valign="TOP" align="center" class="clsCellNormal">ICU Upgrade</td>
+          <td valign="TOP" align="center" class="clsCellNormal">0.3 M/H</td>
+          <td valign="TOP" align="center" class="clsCellNormal">91950-AB060</td>
+          <td valign="TOP" align="center" class="clsCellNormal">I14</td>
+          <td valign="TOP" align="center" class="clsCellNormal">ZZ3</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>1: Submit claim on Campaign Claim Entry Screen</span></div>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>2: If a part that is not covered by this campaign is found in need of replacement while performing this campaign and the affected part is still under warranty, submit a separate claim using the same repair order. If the affected part is out of warranty, submit a Prior Approval request for goodwill consideration prior to performing the work.</span></div>
+    <p><span class="clsEmphBOLD">ICU SOFTWARE UPDATE PROCEDURE </span></p>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Check if the vehicle's software version is affected:<ul class="BULLET">
+          <li>Check the current version of the ICU ROM ID and compare it to the ROM ID information table listed below before attempting to perform the software update.</li>
+        </ul></span></div>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>You must initially perform the GDS ICU Update in Auto Mode.<ul class="BULLET">
+          <li>Refer to the TSB <span class="clsEmphBOLD">15-GI-001 </span>
+ for the tablet-based Mobile GDS ECU update procedures.</li>
+          <li>If the ICU update starts but then fails in Auto Mode, perform the update in Manual Mode to recover. Go to page 9 to complete the update in Manual Mode.</li>
+        </ul></span></div>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span><ul class="BULLET">
+          <li><span class="clsEmphBOLD">In the ECU Upgrade screen, select ICU as the system to update. </span></li>
+        </ul></span></div><h3>GDS INFORMATION</h3>
+    <a name="S24586766152022111100000"></a><div class="clsTableTitle">GDS INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">EVENT INFORMATION</th>
+        </tr>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">&quot;851.CN7 ICU LOGIC IMPROVEMENT&quot;</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7a)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">&quot;852.CN7a ICU LOGIC IMPROVEMENT&quot;</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra Hybrid (CN7 HEV)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">&quot;864.CN7 HEV ICU LOGIC IMPROVEMENT&quot;</td>
+        </tr>
+      </tbody>
+    </table><h3>ROM ID INFORMATION TABLE</h3>
+    <a name="S09439882302022111100000"></a><div class="clsTableTitle">ROM ID INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+          <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">SYSTEM</th>
+          <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">ICU P/N</th>
+          <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+        </tr>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra<br>(CN7)</td>
+          <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">ICU</td>
+          <td valign="TOP" align="center" class="clsCellNormal">91950-AA010 ~ 91950-AA990<br>91951-AA010 ~ 91951-AA590</td>
+          <td valign="TOP" align="center" class="clsCellNormal">1.02<br>1.03<br>1.04<br>1.05</td>
+          <td valign="TOP" align="center" class="clsCellNormal">1.06</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7a)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">91950-AB000 ~ 91950-AB060</td>
+          <td valign="TOP" align="center" class="clsCellNormal">4.01<br>4.02<br>4.03</td>
+          <td valign="TOP" align="center" class="clsCellNormal">4.04</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Elantra Hybrid (CN7 HEV)</td>
+          <td valign="TOP" align="center" class="clsCellNormal">91950-BY010 ~91950-BY240</td>
+          <td valign="TOP" align="center" class="clsCellNormal">3.03<br>3.04<br>3.05<br>3.06</td>
+          <td valign="TOP" align="center" class="clsCellNormal">3.07</td>
+        </tr>
+      </tbody>
+    </table><h3>MANUAL MODE PASSWORD INFORMATION TABLE</h3>
+    <a name="S32234317252022111100000"></a><div class="clsTableTitle">MANUAL MODE PASSWORD INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="left" class="clsCellNormal">Event #</th>
+          <th valign="BOTTOM" align="left" class="clsCellNormal">MENU</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">PASSWORD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">#851 - CN7</td>
+          <td valign="TOP" align="left" class="clsCellNormal">CN7 ICU 91950/91951-AAXXX</td>
+          <td valign="TOP" align="center" class="clsCellNormal">5051</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">#852 - CN7a</td>
+          <td valign="TOP" align="left" class="clsCellNormal">CN7a ICU 91950 - ABXXX</td>
+          <td valign="TOP" align="center" class="clsCellNormal">5060</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">#864 - CN7 HEV</td>
+          <td valign="TOP" align="left" class="clsCellNormal">CN7 HEV ICU 91950-BY010~BY240</td>
+          <td valign="TOP" align="center" class="clsCellNormal">5019</td>
+        </tr>
+      </tbody>
+    </table><h3>SERVICE PROCEDURE</h3>
+    
+    <div class="CAUTION"><span class="CAUTION_label">
+              CAUTION:
+            </span><span>Cautions During Control Unit Upgrade<ul class="BULLET">
+          <li>Confirm the vehicle's battery is above 12 volts. If the vehicle has been in storage for days, run the engine to assure an adequate battery charge state for reliable upgrade results.</li>
+          <li>Turn off all lamps (Do not leave head lamp switch in auto mode) and all accessories (heater, A/C, blower, radio, seat warmer, defroster, etc.); do not allow the battery to be discharged during upgrade.</li>
+          <li>Perform upgrade with the ignition switch in the ON position.</li>
+          <li>Be careful not to disconnect any cables connected to the vehicle or scan tool during upgrade.</li>
+          <li>Do not start the engine during upgrade.</li>
+          <li>Do not turn off the ignition switch during upgrade.</li>
+          <li>Do not touch the systems buttons (like 'BACK', 'HOME', 'etc.') while performing upgrade.</li>
+        </ul></span></div>
+    <p><span class="clsEmphBOLD">CONTROL UNIT UPGRADE PROCEDURE USING THE GDS-Mobile </span></p>
+    <ol class="ARABICNUM">
+      <li><span class="clsEmphBOLD">GDS (Global Diagnostic System)-Mobile INSTALLATION PROCEDURE </span><ol class="ARABICNUM">
+          <li>Connect the VCI-II into the vehicle's DLC connector under the driver side instrument panel and check to turn the VCI-II on.<p>Before starting the update, make certain that the battery of the Table PC is sufficiently charged.</p>
+            <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>ECU upgrade function on GDS-Mobile is basically operating in wireless communication and Wi-Fi direct. Also, it is possible to be performing via USB cable between Tablet PC and VCI-II.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+              <colgroup></colgroup>
+              <tbody>
+                <tr>
+                  <td valign="TOP" align="left" class="clsCellNormal">
+                    <div class="imageHolder" id="container_G15047507">
+                      <div class="imageHeader"><a name="S09664080172022100300000"></a></div><img alt="G15047507" src="../images/G15047507.png" name="G15047507"><span class="imageCourtesyNote"></span></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>You must initially perform GDS-M ICU Update in Auto Mode.<br>If the ICU Update starts but then fails in Auto Mode, perform the update in Manual Mode to recover.</span></div>
+          </li>
+          <li><span class="clsEmphBOLD">AUTOMATIC UPGRADE PROCEDURE USING THE GDS-MOBILE </span><ol class="UNLABELED">
+              <li>2. Select ECU Upgrade on the initial screen after entering the vehicle information and select Auto Mode.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047508">
+                          <div class="imageHeader"><a name="S38713935812022111100000"></a></div><img alt="G15047508" src="../images/G15047508.png" name="G15047508"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047509">
+                          <div class="imageHeader"><a name="S09001703102022100300000"></a></div><img alt="G15047509" src="../images/G15047509.png" name="G15047509"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>3. Select ICU system.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047510">
+                          <div class="imageHeader"><a name="S18694968662022111100000"></a></div><img alt="G15047510" src="../images/G15047510.png" name="G15047510"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>4. Select <span class="clsEmphBOLD">ID Check </span>
+ and GDS will read the current ROM ID in vehicle and check the newest upgrade event.<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Check the current version of the ICU ROM ID and compare it to the ROM ID Information Table before attempting to perform the software update.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047511">
+                          <div class="imageHeader"><a name="S37845726252022100300000"></a></div><img alt="G15047511" src="../images/G15047511.png" name="G15047511"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>5. Select <span class="clsEmphBOLD">Upgrade </span>
+ after confirming correct Event is selected.<p><span class="clsEmphBOLD">CN7: </span>
+ 851.CN7 ICU LOGIC IMPROVEMENT</p>
+                <p><span class="clsEmphBOLD">CN7a: </span>
+ 852.CN7a ICU LOGIC IMPROVEMENT</p>
+                <p><span class="clsEmphBOLD">CN7 HEV: </span>
+ 864.CN7 HEV ICU LOGIC IMPROVEMENT</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047512">
+                          <div class="imageHeader"><a name="S12852947592022111100000"></a></div><img alt="G15047512" src="../images/G15047512.png" name="G15047512"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>6. The vehicle battery voltage is checked to make sure it is at least 12 voltages to assure reliable upgrade results. Click OK if the results indicate voltage is ok.<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If battery voltage is below 12 voltages as below, click BACK and then run the engine to assure an adequate battery charge state for reliable upgrade results.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047513">
+                          <div class="imageHeader"><a name="S21310621262022111100000"></a></div><img alt="G15047513" src="../images/G15047513.png" name="G15047513"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>7. Upgrade (1/2) will begin, and the progress of the upgrade will appear on the bar graph.<p>Upgrade (1/2) will occur until 100% is reached on the bar graph.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047514">
+                          <div class="imageHeader"><a name="S08981282992022111100000"></a></div><img alt="G15047514" src="../images/G15047514.png" name="G15047514"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>8. Upgrade (2/2) will begin, and the progress of the upgrade will appear in the bar graph.<p>Upgrade (2/2) will occur until 100% is reached on the bar graph.</p>
+                <p>When upgrade reaches 100%, follow GDS instructions to &quot;Turn IG off for 10 seconds and then back on. Click the OK button to continue.&quot;</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047515">
+                          <div class="imageHeader"><a name="S15731866432022111100000"></a></div><img alt="G15047515" src="../images/G15047515.png" name="G15047515"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>9. Click <span class="clsEmphBOLD">OK </span>
+ on the final screen, which indicates upgrade is complete.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047516">
+                          <div class="imageHeader"><a name="S13506185842022111100000"></a></div><img alt="G15047516" src="../images/G15047516.png" name="G15047516"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>10. <span class="clsEmphBOLD">After upgrade, remove power connector of indoor fuse box, and reconnect it after 5 seconds </span><p>Check if any incidental Diagnostic Trouble Codes (DTC) have been created by the upgrade and clear the DTC(s) present.</p>
+                <p>Start the engine to confirm proper operation of the vehicle.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047517">
+                          <div class="imageHeader"><a name="S38360726052022111100000"></a></div><img alt="G15047517" src="../images/G15047517.jpeg" name="G15047517"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ol>
+          </li>
+          <li><span class="clsEmphBOLD">MANUAL UPGRADE PROCEDURE USING THE GDS-MOBILE </span><div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span><ul class="BULLET">
+                  <li>The manual upgrade should be performed only when the automatic upgrade fails.</li>
+                  <li>If automatic upgrade fails, turn the ignition key off for about 10 seconds, place it back in the on position to reset the control unit before performing manual upgrade.</li>
+                </ul></span></div>
+            <ol class="UNLABELED">
+              <li>11. Select ECU Upgrade on the initial screen after entering the vehicle information and select Manual Mode.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047518">
+                          <div class="imageHeader"><a name="S23323237112022111100000"></a></div><img alt="G15047518" src="../images/G15047518.png" name="G15047518"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047519">
+                          <div class="imageHeader"><a name="S41413650862022111100000"></a></div><img alt="G15047519" src="../images/G15047519.png" name="G15047519"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>12. Select ICU system.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047520">
+                          <div class="imageHeader"><a name="S04432027782022111100000"></a></div><img alt="G15047520" src="../images/G15047520.png" name="G15047520"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>13. Check that the newest event with reference to the above ROM ID Information Table is selected and tab Upgrade.<p><span class="clsEmphBOLD">CN7: </span>
+ 851.CN7 ICU LOGIC IMPROVEMENT</p>
+                <p><span class="clsEmphBOLD">CN7a: </span>
+ 852.CN7a ICU LOGIC IMPROVEMENT</p>
+                <p><span class="clsEmphBOLD">CN7 HEV: </span>
+ 864.CN7 HEV ICU LOGIC IMPROVEMENT</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047521">
+                          <div class="imageHeader"><a name="S35921669882022111100000"></a></div><img alt="G15047521" src="../images/G15047521.png" name="G15047521"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>14. Enter the password from the below table then touch OK.<p><span class="clsEmphBOLD">#851 - CN7 </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <thead>
+                    <tr class="clsTblHead">
+                      <th valign="BOTTOM" align="left" class="clsCellNormal">MENU</th>
+                      <th valign="BOTTOM" align="center" class="clsCellNormal">PASSWORD</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">CN7 ICU 91950/51-AAXXX</td>
+                      <td valign="TOP" align="center" class="clsCellNormal">5051</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><span class="clsEmphBOLD">#852 - CN7a </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <thead>
+                    <tr class="clsTblHead">
+                      <th valign="BOTTOM" align="left" class="clsCellNormal">MENU</th>
+                      <th valign="BOTTOM" align="center" class="clsCellNormal">PASSWORD</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">CN7a ICU 91950 - ABXXX</td>
+                      <td valign="TOP" align="center" class="clsCellNormal">5060</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><span class="clsEmphBOLD">#864 - CN7 HEV </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <thead>
+                    <tr class="clsTblHead">
+                      <th valign="BOTTOM" align="left" class="clsCellNormal">MENU</th>
+                      <th valign="BOTTOM" align="center" class="clsCellNormal">PASSWORD</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">CN7 HEV ICU 91950-BY010~BY240</td>
+                      <td valign="TOP" align="center" class="clsCellNormal">5019</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>15. The vehicle battery voltage is checked to make sure it is at least 12 volts to ensure reliable upgrade results. Click OK if the results indicate voltage is OK.<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If battery voltage is below 12 voltages as below, click BACK and then run the engine to assure an adequate battery charge state for reliable upgrade results.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047522">
+                          <div class="imageHeader"><a name="S10039144322022111100000"></a></div><img alt="G15047522" src="../images/G15047522.png" name="G15047522"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>16. Upgrade (1/2) will begin, and the progress of the upgrade will appear on the bar graph.<p>Upgrade (1/2) will occur until 100% is reached on the bar graph.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047523">
+                          <div class="imageHeader"><a name="S13172585252022111100000"></a></div><img alt="G15047523" src="../images/G15047523.png" name="G15047523"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>17. Upgrade (2/2) will begin, and the progress of the upgrade will appear in the bar graph.<p>Upgrade (2/2) will occur until 100% is reached on the bar graph.</p>
+                <p>When upgrade reaches 100%, follow GDS instructions to &quot;Turn IG off for 10 seconds and then back on. Click the OK button to continue.&quot;</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047524">
+                          <div class="imageHeader"><a name="S07112864572022111100000"></a></div><img alt="G15047524" src="../images/G15047524.png" name="G15047524"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>18. Click <span class="clsEmphBOLD">OK </span>
+ on the final screen, which indicates upgrade is complete.<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Check the ICU ROM ID and compare it to the ROM ID Information Table to confirm latest ROM ID was updated.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047525">
+                          <div class="imageHeader"><a name="S28426302962022111100000"></a></div><img alt="G15047525" src="../images/G15047525.png" name="G15047525"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>19. <span class="clsEmphBOLD">After upgrade, remove power connector of indoor fuse box, and reconnect it after 5 seconds </span><p>Check if any incidental Diagnostic Trouble Codes (DTC) have been created by the upgrade and clear the DTC(s) present.</p>
+                <p>Start the engine to confirm proper operation of the vehicle.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="TOP" align="left" class="clsCellNormal">
+                        <div class="imageHolder" id="container_G15047526">
+                          <div class="imageHeader"><a name="S32352267462022111100000"></a></div><img alt="G15047526" src="../images/G15047526.jpeg" name="G15047526"><span class="imageCourtesyNote"></span></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

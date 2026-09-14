@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Key Teaching Procedure — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24116.html">Immobilizer System (Except HEV)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24116.html#Repair%20Procedures/">Repair Procedures</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24116.html#Repair%20Procedures/Diagnosis%20With%20Diagnostic%20Tool/">Diagnosis With Diagnostic Tool</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/29743.html">Key Teaching Procedure</a></div><div class="main"><h1>Key Teaching Procedure</h1><div id="S23357016042022071500000">
+  <p>Key teaching must be done after replacing a defective PCM (ECM) or when providing additional keys to the vehicle owner.</p>
+  <p>The procedure starts with an PCM (ECM) request for vehicle specific data (PIN code: 6 digits) from the tester. The &quot;virgin&quot; PCM (ECM) stores the vehicle specific data and the key teaching can be started. The &quot;learnt&quot; PCM (ECM) compares the vehicle specific data from the tester with the stored data. If the data are correct, the teaching can proceed.</p>
+  <p>If incorrect vehicle specific data have been sent to the PCM (ECM) three times, the PCM (ECM) will reject the request of key teaching for one hour. This time cannot be reduced by disconnecting the battery or any other manipulation. After reconnecting the battery, the timer starts again for one hour.</p>
+  <p>The key teaching is done by ignition on with the key and additional tester commands. The PCM (ECM) stores the relevant data in the EEPROM and in the transponder. Then the PCM (ECM) runs the authentication required for confirmation of the teaching process. The successful programming is then confirmed by a message to the tester.</p>
+  <p>If the key is already known to the PCM (ECM) from a previous teaching, the authentication will be accepted and the EEPROM data are updated. There is no changed transponder content (this is impossible for a learnt transponder).</p>
+  <p>The attempt to repeatedly teach a key, which has been taught already during the same teaching cycle, is recognized by the PCM (ECM).</p>
+  <p>This rejects the key and a message is sent to the tester.</p>
+  <p>The PCM (ECM) rejects invalid keys, which are presented for teaching. A message is sent to the tester. The key can be invalid due to faults in the transponder or other reasons, which result from unsuccessful programming of data. If the PCM (ECM) detects different authenticators of a transponder and an PCM (ECM), the key is considered to be invalid.</p>
+  <p>The maximum number of taught keys is 4.</p>
+  <p>If an error occurs during the Immobilizer Service Menu, the PCM (ECM) status remains unchanged and a specific fault code is stored. If the PCM (ECM) status and the key status do not match for teaching of keys, the tester procedure will be stopped and a specific fault code will be stored at PCM (ECM).</p>
+  <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+          </span><span><ul class="BULLET">
+        <li>When teaching the 1st key, Smartra regists at the same time.</li>
+      </ul></span></div><a name="S233570160420220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_G14600485">
+            <div class="imageHeader"><a name="S33791951192022071500000"></a></div><img alt="G14600485" src="../images/G14600485.png" name="G14600485"><span class="imageCourtesyNote">Courtesy of HYUNDAI MOTOR AMERICA</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The following
+ describes how to diagnose faults using a diagnostic instrument.</p>
+  <ol class="ARABICNUM">
+    <li>Connect the cable of Diagnostic tool to the data link connector in driver side crash pad lower panel, and turn on the Diagnostic tool.</li>
+    <li>Select the 'S/W Management' and 'Car model'.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G14600486">
+                <div class="imageHeader"><a name="S17901335522022071500000"></a></div><img alt="G14600486" src="../images/G14600486.png" name="G14600486"><span class="imageCourtesyNote">Courtesy of HYUNDAI MOTOR AMERICA</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li>Select &quot;Immobilizer&quot; and &quot;LEARNT KEYS&quot;.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G14600487">
+                <div class="imageHeader"><a name="S35687848742022071500000"></a></div><img alt="G14600487" src="../images/G14600487.png" name="G14600487"><span class="imageCourtesyNote">Courtesy of HYUNDAI MOTOR AMERICA</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li>Perform the 
+&quot;LEARNT KEYS&quot; procedure according to the Diagnostic tool screen message.</li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

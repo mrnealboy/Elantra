@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC Information And Inspection: DTC Detecting Condition — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Brakes/">Brakes</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Brakes/Traction%20Control/">Traction Control</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/20027.html">Abs/Esp Diagnosis (Except HEV) (1 Of 2)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/20027.html#DTC%20C1283-02%3A%20Yaw%20Rate%20%26%20G%20Sensor-Signal/">DTC C1283-02: Yaw Rate &amp; G Sensor-Signal</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/20027.html#DTC%20C1283-02%3A%20Yaw%20Rate%20%26%20G%20Sensor-Signal/DTC%20Information%20And%20Inspection/">DTC Information And Inspection</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/20175.html">DTC Detecting Condition</a></div><div class="main"><h1>DTC Information And Inspection: DTC Detecting Condition</h1><div id="S14161988352022071500000"><a name="S141619883520220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+      <col span="1" id="COL3" align="left">
+      <col span="1" id="COL4" align="left">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Trouble Shooting</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Condition</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Possible cause</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Main action</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Monitor the Lateral G sensor/Yaw rate sensor signal error</li>
+          </ul>
+        </td>
+        <td valign="MIDDLE" rowspan="9" align="left" class="clsCellNormal">
+          <ol class="ARABICNUM">
+            <li>Faulty ESP (ESC)</li>
+            <li>Incorrect installation condition</li>
+            <li>Poor connector connection</li>
+            <li>Open or short of sensor circuit</li>
+            <li>Faulty IMU</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">Threshold Value</td>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 1 (Faulty Yaw rate sensor signal)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>A failure is detected when Yaw sensor values is greater than 30 deg./s for more than 5 seconds on first standstill and Yaw sensor values is greater than 95 deg./s for more than 1 second during driving.</li>
+            <li>A failure is detected if a rapidly change of ΔYaw&gt; (10 to 25deg./s) is more than 120 milliseconds, depending on the vehicle condition.</li>
+            <li>A failure is detected when the difference between estimated sensor value from other sensor and measured sensor value of the Yaw rate sensor is greater than (6+α) deg./s during vehicle stable driving over a certain period of time.<p>(Maximum 120 seconds)</p>
+              <p>(But, threshold value changes from (6+α) deg./s to (3.5+α) deg./s after offset calibration)</p>
+              <p>* &quot;α&quot; value is changed depending on vehicle driving status</p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 2 (Faulty Yaw rate sensor offset)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>A failure is detected when the absolute value of Yaw rate sensor offset is greater than 6deg/s when straight and stable driving over 30 km/h (18.7 MPH).</li>
+            <li>A failure is detected when the difference between estimated offset value from other sensor and measured offset value of the Yaw rate is greater than 6deg/s during vehicle standstill.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 3 (Faulty Yaw rate sensor signal)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Abnormal CAN message (YRS11, 12) received for more than specific times<ul class="DASH">
+                <li>Any control activated: 100 ms/All control inactivated: 500 ms</li>
+              </ul>
+            </li>
+            <li>Abnormal CAN message (YRS13) received for more than specific times (HAC Applied Vehicle Only)<ul class="DASH">
+                <li>Any control activated: 500 ms/All control inactivated: 2500 ms</li>
+              </ul>
+            </li>
+            <li>Abnormal Alive Counter CAN message (YRS11, 12) received for more than specific times<ul class="DASH">
+                <li>Vehicle driving and control: 100 ms/Standstill and not control: 500 ms</li>
+              </ul>
+            </li>
+            <li>A failure is detected when there is a difference between the Checksum value of CAN message (YRS 11, 12) and calculated Checksum value for more than specific times.<ul class="DASH">
+                <li>Vehicle driving and control: 100 ms/Standstill and not control: 500 ms</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 4 (Faulty Lateral G sensor signal)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>When Lateral G sensor variation is greater than 15 m/s2 for more than 1 second.</li>
+            <li>When Lateral G sensor variation is greater than 11 m/s2 for more than 120 milliseconds</li>
+            <li>A failure is detected when the difference between estimated sensor value and measured sensor value of the Lateral G sensor is greater than (3+α) m/s2 during vehicle stable driving. (Maximum 120 seconds)<p>* &quot;α&quot; value is changed depending on vehicle driving status</p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 5 (Faulty Lateral G offset)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>A failure is detected when the monitoring value of Lateral G sensor offset is greater than 7 m/s2 during vehicle standstill.</li>
+            <li>A failure is detected if the absolute value of Lateral G sensor offset is greater than 2.5m/s2 when straight and stable driving over 30 km/h (18.7 MPH).</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 6 (Faulty Longitudinal G sensor)</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>When Longitudinal G sensor variation is greater than 15 m/s2 for more than 1 second during non-control.</li>
+            <li>When Longitudinal G sensor offset value is greater than 12 m/s2 when vehicle is standstill.<ul class="DASH">
+                <li>Monitoring 1 time after Ignition &quot;ON&quot;</li>
+              </ul>
+            </li>
+            <li>A failure is detected when the difference between estimated sensor value and measured sensor value of the longitudinal G sensor is greater than 4.5 m/s2 for more than 2 seconds during vehicle stable driving.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">MIL</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>ESP (ESC) warning lamp is activated</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Reset condition</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>After the ignition switch is turned OFF and ON, and the sensor signal is normal after driving more than 12 km/h (7.45 MPH).</li>
+            <li>When the followings are normal, on a driving above 12 km/h (7.45 MPH).<ol class="ARABICNUM">
+                <li>In case of straight driving, Yaw values is within 3 degree/seconds</li>
+                <li>Yaw value for right turn is lower than -2 deg./s.<p>Yaw value for left turn is greater than +2 deg./s.</p>
+                </li>
+                <li>When the vehicle is running to left or right more than ± 2deg./s, if the measured Yaw value is in between lower limit 50% and upper limit 150% of estimated Yaw value over a certain period of time.</li>
+              </ol>
+            </li>
+            <li>After ignition switch turned OFF and ON.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

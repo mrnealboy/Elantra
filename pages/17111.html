@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC Information And Inspection: DTC Detecting Condition — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13135.html">External Pages</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13135.html#Different%20variant%2Ftrim/">Different variant/trim</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17091.html">Section 36 (Engine Control System Diagnosis - 2.0L (Except HEV) (6 Of 6))</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17091.html#DTC%20P219E-00%3A%20Cylinder%203%20Air-Fuel%20Ratio%20Imbalance/">DTC P219E-00: Cylinder 3 Air-Fuel Ratio Imbalance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17091.html#DTC%20P219E-00%3A%20Cylinder%203%20Air-Fuel%20Ratio%20Imbalance/DTC%20Information%20And%20Inspection/">DTC Information And Inspection</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17111.html">DTC Detecting Condition</a></div><div class="main"><h1>DTC Information And Inspection: DTC Detecting Condition</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about a different variant/trim than selected.</div><div id="S40069812852022071500000"><a name="S400698128520220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+      <col span="1" id="COL3" align="left">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Item</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Detecting Condition</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Possible Cause</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">DTC Strategy</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Air/Fuel ratio cylinder imbalance monitoring</li>
+          </ul>
+        </td>
+        <td valign="MIDDLE" rowspan="5" align="left" class="clsCellNormal">
+          <ol class="ARABICNUM">
+            <li>Poor connector connection</li>
+            <li>Air leak on Cylinder #3</li>
+            <li>Faulty injector</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Enable Condition</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Engine coolant temperature is higher than 68°C (154.4°F)</li>
+            <li>Modeled catalyst temperature is lower than 900°C (1652°F)</li>
+            <li>Engine speed at between 992 RPM and 2800 RPM</li>
+            <li>Fuel mass set-point at between 11 mg/stroke and 27 mg/stroke</li>
+            <li>Vehicle speed is higher than 25 km/h (15.6 mph)</li>
+            <li>Fuel trim active<ul class="DASH">
+                <li>No relevant failure (Upstream O2 sensor, Injector valve, ETC in limp home state)</li>
+                <li>Measured Tip temperature is higher than 680°C (1256°F)</li>
+                <li>Engine coolant temperature is higher than 0°C (32°F)</li>
+              </ul>
+            </li>
+            <li>Lambda set-point at between 0.97 and 1.03</li>
+            <li>Stable driving condition<ul class="DASH">
+                <li>Difference between the engine speed and the filtered engine speed is lower than 60 RPM</li>
+                <li>Difference between the mass air and the filtered mass air is lower than 80 mg/stroke</li>
+                <li>Difference between the lambda and the filtered lambda is lower than 5%</li>
+              </ul>
+            </li>
+            <li>Fuel cut-off not active</li>
+            <li>Catalyst purge after fuel cut off not active</li>
+            <li>No misfire detected</li>
+            <li>Catalyst diagnosis finished</li>
+            <li>Barometric pressure (BARO) is higher than 75 kPa</li>
+            <li>Full load not active</li>
+            <li>Crankshaft segment adaptation finished</li>
+            <li>No gear transition</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Threshold Value</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Calculated fuel trim (Prevolutionious long term fuel trim + current short term fuel trim) is higher than 17% or lower than -19%</li>
+            <li>Long term fuel trim is higher than 14% or lower than -16%</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Diagnostic Time</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Within 2 A/F adaptation cycles</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">MIL ON Condition</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>2 driving cycles</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,2856 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>IBU/BCM Anti-Theft Software Upgrade And Decal Application (Service Campaign 993) (SC993) — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24110.html">Campaigns</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/29881.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/29881.html#Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/29885.html">IBU/BCM Anti-Theft Software Upgrade And Decal Application (Service Campaign 993) (SC993)</a></div><div class="main"><h1>IBU/BCM Anti-Theft Software Upgrade And Decal Application (Service Campaign 993) (SC993)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Elantra N Line, Automatic DCT Trans, which is a different variant/trim than selected.</div>Publication date: 2024-05-14<br>Reference number: SC993<br>Supersedes refnos: 23-01-014H, 23-01-014H-1, 23-01-014H-2, 23-01-014H-3, 23-01-014H-4, 23-01-014H-5, 23-01-014H-6, 24-01-009H, 24-01-009H-1, SC 993<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>IBU/BCM ANTI-THEFT SOFTWARE UPGRADE AND DECAL APPLICATION (SERVICE CAMPAIGN 993)</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>IBU/BCM ANTI-THEFT SOFTWARE UPGRADE AND DECAL APPLICATION (SERVICE CAMPAIGN 993)</h2>
+    <h2>SERVICE CAMPAIGN BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): 24-01-009H-1, Date of Issue: 
+				May 14, 2024<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HYUNDAI:</td>
+          <td>All Models</td>
+        </tr>
+        <tr>
+          <td class="clsTDescTitle">GROUP:</td>
+          <td>Campaign</td>
+        </tr>
+      </table>Superceded Bulletin(s): 24-01-009H</div><h3>REVISION HISTORY</h3>
+    
+    <p>This TSB supersedes 24-01-009H to add to the note in the &quot;NOTICE&quot; section below.</p>
+    <div class="IMPORTANT"><span class="IMPORTANT_label">
+									IMPORTANT:
+								</span><span>Dealers must perform this service campaign on all affected vehicles prior to customer retail delivery and whenever an affected vehicle is in the shop for any maintenance or repair.<br>Access the &quot;Vehicle Information&quot; screen via WEBDCS to identify open campaigns.</span></div><h3>DESCRIPTION</h3>
+    
+    <p>Certain Hyundai vehicles may not be equipped with an engine immobilizer.</p>
+    <p>This bulletin provides the service procedure to: 1) Upgrade the IBU/BCM (Integrated Body Control Unit/Body Control Module) to revise the OEM Hyundai burglar alarm system operation and ignition start logic and 2) Install two anti-theft decals for the front windows. Additional decals may also be installed in the rear windows at customer's discretion.</p>
+    <p><span class="clsEmphBOLDITAL">STUI </span></p>
+    <p><span class="clsEmphBOLD">This TSB includes inspection/repair validation photos. Refer to the latest Warranty Digital Documentation Policy for requirements. </span></p>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span><ul class="BULLET">
+          <li>Once the software upgrade has been completed, the key fob buttons to lock and unlock the vehicle are required to activate/deactivate the anti-theft system. After using the key fob to activate the anti-theft system, the key fob must be used to first disarm the system prior to attempting to start the vehicle.</li>
+          <li>This software upgrade may be incompatible with aftermarket/add-on alarms and remote start systems. Installation of the software upgrade in vehicles equipped with these devices may cause the software upgrade, the aftermarket/add-on alarm, and/or the remote start system not to function properly.</li>
+          <li>Vehicles equipped with the OEM Genuine Hyundai remote start system may exhibit the horn honking when remote starting the vehicle after receiving the software upgrade. Refer to TSB 23-BE-010H (or latest version) to upgrade the remote start module to eliminate the horn honking during remote start operation.</li>
+        </ul></span></div>
+    <p><span class="clsEmphBOLD">Information </span></p>
+    <p><span class="clsEmphBOLD">Install the anti-theft decals while the BCM software is being upgraded. </span></p>
+    <p><span class="clsEmphBOLD">Information </span></p>
+    <p><span class="clsEmphBOLD">Before performing the AUTO software upgrade, write down or take a picture of the current ROM ID in case MANUAL update is required. This information will be used to select the correct MANUAL passcode/event. </span></p>
+    <p><span class="clsEmphBOLD">Applicable Vehicles: </span></p>
+    <p><span class="clsEmphBOLD">Vehicles not equipped with an engine immobilizer, and not equipped with START/STOP ignition button </span></p>
+    <ul class="BULLET">
+      <li>Certain 2011-2014MY Sonata (YFa) (VIN starts with &quot;5NP&quot;)</li>
+      <li>Certain 2015-2019MY Sonata (LFa) (VIN starts with &quot;5NP&quot;)</li>
+      <li>Certain 2011-2016MY Elantra (UD/MD) (UD VIN starts with &quot;5NP&quot;, MD VIN starts with &quot;KMH&quot;)</li>
+      <li>Certain 2017-2020MY Elantra (AD/ADa) (ADa VIN starts with &quot;5NP&quot;, AD VIN starts with &quot;KMH&quot;)</li>
+      <li>Certain 2021-2022MY Elantra (CN7/CN7a) (CN7a VIN starts with &quot;5NP&quot;, CN7 VIN starts with &quot;KMH&quot;)</li>
+      <li>Certain 2013-2017MY Elantra GT (GD)</li>
+      <li>Certain 2018-2020MY Elantra GT (PD)</li>
+      <li>Certain 2020-2021 MY Venue (QX)</li>
+      <li>Certain 2012-2017MY Veloster (FS)</li>
+      <li>Certain 2019-2021 MY Veloster (JS)</li>
+      <li>Certain 2018-2022MY Kona (OS)</li>
+      <li>Certain 2018-2022MY Accent (HC)</li>
+      <li>Certain 2011-2015MY Tucson (LM)</li>
+      <li>Certain 2016-2021MY Tucson (TL)</li>
+      <li>Certain 2022MY Tucson (NX4/NX4a) (NX4a VIN starts with &quot;5NM&quot;, NX4 VIN starts with &quot;KM8&quot;)</li>
+      <li>Certain 2013-2018MY Santa Fe Sport (AN)</li>
+      <li>Certain 2013-2018MY Santa Fe &amp; 2019MY Santa Fe XL (NC)</li>
+      <li>Certain 2019-2022MY Santa Fe (TMa) (VIN starts with &quot;5NM&quot;)</li>
+      <li>Certain 2020-2021 MY Palisade (LX2)</li>
+      <li>Certain 2013-2014MY Genesis Coupe (BK)</li>
+    </ul><h3>PARTS INFORMATION</h3>
+    <a name="S14507185822024060300000"></a><div class="clsTableTitle">PARTS INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="center" class="clsCellNormal">PART NAME</th>
+          <th valign="BOTTOM" align="left" class="clsCellNormal">PART NUMBER</th>
+          <th valign="BOTTOM" align="left" class="clsCellNormal">PART IMAGE</th>
+          <th valign="BOTTOM" align="center" class="clsCellNormal">QTY.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="center" class="clsCellNormal">Anti-Theft Decal</td>
+          <td valign="TOP" align="left" class="clsCellNormal">NP001-SC993<div class="NOTE"><span class="NOTE_label">
+							NOTE:
+					</span><span><ol class="ARABICNUM">
+                  <li>Parts ordering information can be found in the SC993 Parts Bulletin located in the Documents Library in WebDCS. (HD.com/Parts/DocumentsLibrary/Reference Materials/Parts Bulletin).</li>
+                  <li>Order comes in a roll of 500 decals.</li>
+                </ol></span></div>
+          </td>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G16441749">
+              <div class="imageHeader"><a name="S03437832382024021400000"></a></div><img alt="G16441749" src="../images/G16441749.jpeg" name="G16441749"><span class="imageCourtesyNote"></span></div>
+          </td>
+          <td valign="TOP" align="center" class="clsCellNormal">2 decals per vehicle</td>
+        </tr>
+      </tbody>
+    </table><h3>WARRANTY INFORMATION</h3>
+    
+    <div id="S09109148312024060300000" class="infoObjPrint"><h4>INSPECTION - VEHICLE HAS START STOP BUTTON OR IMMOBILIZER LAMP</h4>
+      <a name="S12392845232024021400000"></a><div class="clsTableTitle">WARRANTY INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. CODE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OPERATION</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. TIME</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSAL PART</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">NATURE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (LFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC4</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">INSPECTION ONLY-VEHICLE HAS START STOP BUTTON OR IMMOBILIZER LAMP</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">0.1 M/H</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-C2100</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">I14</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">ZZ3</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (AD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (ADa) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VENUE (QX)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-K2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">KONA (OS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC8</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J9GJ0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (FS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2V054</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (JS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J3720</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (YFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3Q000</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AA920</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7a) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AB100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (PD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-G3970</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ACCENT (HC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J0400</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (LM)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2S710</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (TL)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-D3600</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4) &quot;KM8&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD8</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-N9001</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4a) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOD9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-CW051</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE SPORT (AN)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (NC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z240</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (TMa) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (UD) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X530</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (MD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X570</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (GD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-A5510</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">PALISADE (LX2)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S8MB0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">GENESIS COUPE (BK)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2M870</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="S19935102942024060300000" class="infoObjPrint"><h4>AFTERMARKET SECURITY SYSTEM/CUSTOMER DECLINED ANTI-THEFT SOFTWARE UPGRADE</h4>
+      <a name="S14117097442024021400000"></a><div class="clsTableTitle">WARRANTY INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. CODE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OPERATION</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. TIME</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSAL PART</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">NATURE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (LFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE8</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">AFTERMARKET SECURITY SYSTEM/CUSTOMER DECLINED ANTI-THEFT SOFTWARE UPGRADE</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-C2100</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">0.1 M/H</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">I14</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">ZZ3</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (AD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOE9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (ADa) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VENUE (QX)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-K2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">KONA (OS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J9GJ0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (FS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2V054</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (JS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J3720</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (YFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3Q000</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AA920</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7a) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AB100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (PD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF8</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-G3970</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ACCENT (HC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOF9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J0400</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (LM)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2S710</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (TL)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-D3600</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4) &quot;KM8&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-N9001</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4a) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-CW051</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE SPORT (AN)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (NC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z240</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (TMa) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (UD) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X530</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (MD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG8</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X570</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (GD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOG9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-A5510</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">PALISADE (LX2)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOH0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S8MB0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">GENESIS COUPE (BK)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOH1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2M870</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Opt-out form will be required to be attached at time of claim submission. Claims found to not have a valid or incomplete opt-out form will be subject to debit.</span></div>
+    </div>
+    <div id="S19723254392024060300000" class="infoObjPrint"><h4>INSPECTION AND BCM/IBU UPGRADE AND DECAL APPLICATION</h4>
+      <a name="S15153162612024060300000"></a><div class="clsTableTitle">WARRANTY INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. CODE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OPERATION</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">OP. TIME</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSAL PART</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">NATURE</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">CAUSE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (LFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA0</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">INSPECTION AND BCM/IBU UPGRADE AND DECAL APPLICATION</td>
+            <td valign="MIDDLE" rowspan="8" align="center" class="clsCellNormal">0.3 M/H</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-C2100</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">I14</td>
+            <td valign="MIDDLE" rowspan="24" align="center" class="clsCellNormal">ZZ3</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (AD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (ADa) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VENUE (QX)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-K2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">KONA (OS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J9GJ0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (FS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2V054</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">VELOSTER (JS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J3720</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SONATA (YFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3Q000</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA8</td>
+            <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">0.4 M/H</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AA920</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (CN7a) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOA9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-AB100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (PD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB0</td>
+            <td valign="MIDDLE" rowspan="14" align="center" class="clsCellNormal">0.3 M/H</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-G3970</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ACCENT (HC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-J0400</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (LM)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2S710</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (TL)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-D3600</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4) &quot;KM8&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB4</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-N9001</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">TUCSON (NX4a) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB5</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-CW051</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE SPORT (AN)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB6</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z100</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (NC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB7</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-4Z240</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">SANTA FE (TMa) &quot;5NM&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB8</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S2500</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (UD) &quot;5NP&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOB9</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X530</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA (MD) &quot;KMH&quot;</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC0</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-3X570</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">ELANTRA GT (GD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC1</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-A5510</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">PALISADE (LX2)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC2</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-S8MB0</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">GENESIS COUPE (BK)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">HYIMMOC3</td>
+            <td valign="TOP" align="center" class="clsCellNormal">95400-2M870</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span><ol class="ARABICNUM">
+            <li>Submit claim on Claim Entry Screen as &quot;Campaign&quot; type.</li>
+            <li>If a part that is not covered by this campaign is found in need of replacement while performing this campaign and the affected part is still under warranty, submit a separate claim using the same repair order. If the affected part is out of warranty, submit a Prior Approval request for goodwill consideration prior to performing the work.</li>
+            <li>Op times of 0.3 M/H and 0.4 M/H include inspection, completing the decal installation for both front windows while the software upgrade is being performed, taking STUI photos, and uploading. The STUI photos must include the anti-theft decals on the driver and passenger front windows clearly visible along with a piece of paper displaying the last 6 digits of the VIN and date of the repair. If not included, claim will be subject to debit.</li>
+          </ol></span></div>
+    </div><h3>FLOW CHART</h3>
+    <a name="S201813777420240214000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G16441750">
+              <div class="imageHeader"><a name="S01599195392024060300000"></a></div><img alt="G16441750" src="../images/G16441750.png" name="G16441750"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table><h3>SERVICE PROCEDURE</h3>
+    
+    <div id="S05755111432024021400000" class="infoObjPrint"><h4>INSPECTION ONLY - VEHICLE HAS START STOP BUTTON OR IMMOBILIZER LAMP</h4>
+      
+      <ol class="ARABICNUM">
+        <li>
+          <ol class="UPPERALPHA">
+            <li>Visually confirm if the vehicle is equipped with a START/STOP button.<p><span class="clsEmphBOLDITAL">STUI </span></p>
+              <p><span class="clsEmphBOLD">Using STUI, take a picture of the START/STOP button with a piece of paper including the last 6 digits of the VIN and date of the inspection. Upload the photos to STUI. </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                <colgroup></colgroup>
+                <tbody>
+                  <tr>
+                    <td valign="TOP" align="left" class="clsCellNormal">
+                      <div class="imageHolder" id="container_G16441751">
+                        <div class="imageHeader"><a name="S18857673932024060300000"></a></div><img alt="G16441751" src="../images/G16441751.jpeg" name="G16441751"><span class="imageCourtesyNote"></span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>If vehicle is not equipped with START/STOP button then proceed to 1B to inspect for the immobilizer lamp on the instrument cluster.</p>
+            </li>
+            <li>If vehicle is equipped with a mechanical key type ignition, then turn ignition to ON position.<p>Visually confirm if there is an immobilizer lamp displayed on the instrument cluster.</p>
+              <p><span class="clsEmphBOLDITAL">STUI </span></p>
+              <p><span class="clsEmphBOLD">Using STUI, take a picture of the immobilizer lamp on the instrument cluster with a piece of paper including the last 6 digits of the VIN and date of the inspection. Upload the photos to STUI. </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+                <colgroup></colgroup>
+                <tbody>
+                  <tr>
+                    <td valign="TOP" align="left" class="clsCellNormal">
+                      <div class="imageHolder" id="container_G16441752">
+                        <div class="imageHeader"><a name="S41490692332024060300000"></a></div><img alt="G16441752" src="../images/G16441752.jpeg" name="G16441752"><span class="imageCourtesyNote"></span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ol>
+        </li>
+        <li><span class="clsEmphBOLD">If vehicle is NOT equipped with the START/STOP button or the immobilizer lamp, then proceed to perform the software upgrade. </span><p><span class="clsEmphBOLD">Otherwise, procedure is complete. Submit &quot;INSPECTION ONLY&quot; campaign claim. </span></p>
+        </li>
+      </ol>
+    </div>
+    <div id="S18308905642024021400000" class="infoObjPrint"><h4>IBU/BCM SOFTWARE UPGRADE NOTES</h4>
+      
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <ul class="BULLET">
+        <li><span class="clsEmphBOLD">Refer to the link below for guided video information: </span><p><span class="clsEmphBOLD">https://vimeo.com/796843448/49ace103a8 </span></p>
+        </li>
+      </ul>
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <ul class="BULLET">
+        <li><span class="clsEmphBOLD">Before proceeding, ensure the vehicle is not equipped with a START/STOP push button. </span></li>
+        <li><span class="clsEmphBOLD">Also, ensure the vehicle is not equipped with an immobilizer lamp on the instrument cluster when ignition is turned ON. </span></li>
+      </ul><a name="S183089056420240214000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G16441753">
+                <div class="imageHeader"><a name="S07869812272024060300000"></a></div><img alt="G16441753" src="../images/G16441753.jpeg" name="G16441753"><span class="imageCourtesyNote"></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <p><span class="clsEmphBOLD">Check if the vehicle's current software version will need to be upgraded: </span></p>
+      <ul class="BULLET">
+        <li>Check the current version of the IBU/BCM ROM ID and compare it to the ROM ID information table listed below before attempting to perform the software upgrade.</li>
+        <li>Take a picture or write down the current ROM ID in case manual update is required. The current ROM ID will determine which PASSCODE to use for MANUAL UPGRADE.</li>
+      </ul>
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <p><span class="clsEmphBOLD">You must initially perform the GDS IBU/BCM Upgrade in Auto Mode. </span></p>
+      <ul class="BULLET">
+        <li>Refer to the TSB <span class="clsEmphBOLD">15-GI-001 </span>
+ for the tablet-based Mobile GDS ECU upgrade procedures.</li>
+        <li>If the IBU/BCM upgrade starts but then fails in Auto Mode, perform the upgrade in Manual Mode to recover.</li>
+        <li>If Auto Mode upgrade is not available due to unidentified ROM ID, then <span class="clsEmphBOLD">DO NOT </span>
+ perform the upgrade using Manual Mode, call Techline for further instructions.</li>
+      </ul>
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <p><span class="clsEmphBOLD">Troubleshooting Tips </span></p>
+      <ul class="BULLET">
+        <li><span class="clsEmphBOLD">If there are issues with the software upgrade or certain features not operating normally on the vehicle after the update, then perform capacitive discharge and try again. </span></li>
+        <li><span class="clsEmphBOLD">When selecting the MANUAL PASSCODE, pay close attention to the part number and software version in the table. The selected passcode and event should match with what was originally in the vehicle. </span></li>
+        <li><span class="clsEmphBOLD">If the software is upgrading and fails (not relating to GDS disconnection or battery died) at any percentage, then try the following: </span><ul class="DASH">
+            <li>Select OK when the error message pops up, and DO NOT SELECT ANYTHING ELSE, LEAVE EVERYTING AS IS.</li>
+            <li>Turn the ignition OFF for 15 seconds and then turn it back ON.</li>
+            <li>Proceed with MANUAL update procedure following the GDS screen instructions.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="S18851085822024021400000" class="infoObjPrint"><h4>IBU/BCM SOFTWARE UPGRADE</h4>
+      
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <ul class="BULLET">
+        <li><span class="clsEmphBOLD">Install the anti-theft decals while the BCM software is being updated. </span></li>
+      </ul>
+      <ol class="ARABICNUM">
+        <li>Select IBU/BCM as the system to upgrade.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441754">
+                    <div class="imageHeader"><a name="S32696048172024060300000"></a></div><img alt="G16441754" src="../images/G16441754.png" name="G16441754"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Select ID Check.<p>Check the current version of the IBU/BCM ROM ID and compare it to the ROM ID information table listed below before attempting to perform the software upgrade.</p>
+          <p><span class="clsEmphBOLD">Information </span></p>
+          <p><span class="clsEmphBOLD">Take a picture/write down the current ROM ID in case manual update is required. </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441755">
+                    <div class="imageHeader"><a name="S02105266212024060300000"></a></div><img alt="G16441755" src="../images/G16441755.png" name="G16441755"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Perform GDS software upgrade. Refer to TSB <span class="clsEmphBOLD">15-GI-001 </span>
+ for the tablet-based Mobile GDS ECU upgrade procedures.</li>
+        <li>While the software is upgrading, install the anti-theft decals as outlined above.</li>
+        <li>Ensure the software upgrade was successful with the latest ROM ID.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441756">
+                    <div class="imageHeader"><a name="S11895293812024060300000"></a></div><img alt="G16441756" src="../images/G16441756.png" name="G16441756"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>After the software has upgraded, check for Diagnostic Trouble Codes in the <span class="clsEmphBOLD">ALL </span>
+ menus and erase any DTC.</li>
+        <li>Software upgrade complete.</li>
+      </ol>
+    </div>
+    <div id="S02249426992024021400000" class="infoObjPrint"><h4>ANTI-THEFT DECAL INSTALLATION</h4>
+      
+      <p><span class="clsEmphBOLD">Information </span></p>
+      <p><span class="clsEmphBOLD">Install the anti-theft decals while the BCM software is being upgraded. </span></p>
+      <ol class="ARABICNUM">
+        <li>Print the last sortion of this TSB, as it is the template to assist with the installation of the decals.</li>
+        <li>Fold the template from the bottom upward to the solid line.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441757">
+                    <div class="imageHeader"><a name="S25077147302024060300000"></a></div><img alt="G16441757" src="../images/G16441757.jpeg" name="G16441757"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Cut out the two rectangles.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441758">
+                    <div class="imageHeader"><a name="S05848021262024060300000"></a></div><img alt="G16441758" src="../images/G16441758.jpeg" name="G16441758"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Roll both the front driver and passenger windows to the upmost position.</li>
+        <li><a name="S33267935442024060300000"></a>Use rubbing alcohol and a new rag to clean the inside lower left corner of the front driver side window, and lower right corner of the front passenger side window.<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>The anti-theft decals can be installed over a tinted window film.</span></div><a name="S332679354420240603000001"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441759">
+                    <div class="imageHeader"><a name="S28011717492024060300000"></a></div><img alt="G16441759" src="../images/G16441759.jpeg" name="G16441759"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Align the template edge approximately 1/4&quot; next to the existing label's/decal's edge.<p>Use masking tape to tape down the template onto the glass and door panel.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441760">
+                    <div class="imageHeader"><a name="S30613223902024060300000"></a></div><img alt="G16441760" src="../images/G16441760.jpeg" name="G16441760"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Tear/Cut two anti-theft decals from the roll.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441761">
+                    <div class="imageHeader"><a name="S32216972212024060300000"></a></div><img alt="G16441761" src="../images/G16441761.jpeg" name="G16441761"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>Without touching the bottom (glue side) of the decal, carefully pull back the paper side halfway and align it within the cut-out rectangle template.<p>Use thumb to firmly press the decal down onto the window glass.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441762">
+                    <div class="imageHeader"><a name="S20651088872024060300000"></a></div><img alt="G16441762" src="../images/G16441762.jpeg" name="G16441762"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Avoid touching the bottom (glue side) of the decal as the fingerprint will reduce the adhesive strength to the window glass.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441763">
+                    <div class="imageHeader"><a name="S18676656112024060300000"></a></div><img alt="G16441763" src="../images/G16441763.jpeg" name="G16441763"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li><a name="S34593951642024060300000"></a>Remove the template.<p>Continue pressing down in the decal, ensuring there are no visible bubbles within the decal.</p>
+        </li>
+        <li>Repeat the steps  <a class="clsListItemLink" href="#S33267935442024060300000" location="/api/article/getcontent?articleId=_S33267935442024060300000_LSTITM">5</a>- <a class="clsListItemLink" href="#S34593951642024060300000" location="/api/article/getcontent?articleId=_S34593951642024060300000_LSTITM">9</a> for the other window.</li>
+        <li>
+          <p><span class="clsEmphBOLDITAL">STUI </span></p>
+          <p><span class="clsEmphBOLD">Using STUI, take pictures of both the driver and passenger anti-theft decals on the front windows with a piece of paper including the last 6 digits of the VIN and date of the repair. Upload the photos to STUI. </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+            <colgroup></colgroup>
+            <tbody>
+              <tr>
+                <td valign="TOP" align="left" class="clsCellNormal">
+                  <div class="imageHolder" id="container_G16441764">
+                    <div class="imageHeader"><a name="S32482869862024060300000"></a></div><img alt="G16441764" src="../images/G16441764.jpeg" name="G16441764"><span class="imageCourtesyNote"></span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If the window is tinted with a non-legal shade, inform the customer of the possible poor visibility of the anti-theft decals.</span></div>
+          <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>The anti-theft decal template can be reused for all models.</span></div>
+          <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Once the upgrade procedure has been completed, the key fob buttons to lock and unlock the vehicle are required to activate/deactivate the anti-theft system. After using the key fob to activate the anti-theft system, the key fob must be used to first disarm the system prior to attempting to start the vehicle.</span></div>
+        </li>
+      </ol><a name="S022494269920240214000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G16441765">
+                <div class="imageHeader"><a name="S20174911162023112800000"></a></div><img alt="G16441765" src="../images/G16441765.jpeg" name="G16441765"><span class="imageCourtesyNote"></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="S06197782022024060300000" class="infoObjPrint"><h4>SONATA (YFa)</h4>
+      <a name="S42699534542023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Sonata (YFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">980. YFA IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S27916388902024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S16083323322023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Sonata (YFa)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">YFa BCM 95400-3Q000/100/001/101(0A2, 0A3, 0A6, 0A8)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9431</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">YFa BCM 95400-3Q003/103(0B3, 0B7), 95400-3Q004/104(0C0, 0C2)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9432</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">YFa BCM 95400-3Q005/025/105/125(0C7, 0D2, 0D3)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9433</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S12787289662024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S30424846962023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Sonata (YFa)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">2011 - 2014</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3Q000<br>95400-3Q100<br>95400-3Q001<br>95400-3Q101</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003Q000_0A2<br>954003Q000_0A3<br>954003Q000_0A6<br>954003Q000_0A8<br>954003Q001_0A8<br>954003Q100_0A2<br>954003Q100_0A3<br>954003Q100_0A6<br>954003Q100_0A8<br>954003Q101_0A8</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">954003Q***_0DD</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3Q003<br>95400-3Q103<br>95400-3Q004<br>95400-3Q104</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003Q003 0B3<br>954003Q003_0B7<br>954003Q004_0B7<br>954003Q004 0C0<br>954003Q004 0C2<br>954003Q103 0B3<br>954003Q103_0B7<br>954003Q104_0B7<br>954003Q104_0C0<br>954003Q104 0C2<br>954003Q005 0C7</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3Q005<br>95400-3Q025<br>95400-3Q105<br>95400-3Q125</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003Q005_0D2<br>954003Q005_0D3<br>954003Q025 0C7<br>954003Q025 0D2<br>954003Q025 0D3<br>954003Q105_0C7<br>954003Q105_0D2<br>954003Q105_0D3<br>954003Q125 0C7<br>954003Q125 0D2<br>954003Q125_0D3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S29157145062024060300000" class="infoObjPrint"><h4>SONATA (LFa)</h4>
+      <a name="S22605124842023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Sonata (LFa)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">932. LF(a) IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S22156610772024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S41515254462023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Sonata (LFa)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">BCM 95400-C2100/200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5920</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">BCM 95400-C2101/201</td>
+              <td valign="TOP" align="center" class="clsCellNormal">6921</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">BCM 95400-C2600/610/620/700</td>
+              <td valign="TOP" align="center" class="clsCellNormal">7970</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S02041636782024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S39792157752023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Sonata (LFa)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">2015 - 2019</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-C2100<br>95400-C2200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400C2100_100* (*100 - 104)<br>95400C2200_100* (*100 - 104)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">95400C2*** I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-C2101<br>95400-C2201</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400C2101_200<br>95400C2201_200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-C2600<br>95400-C2610<br>95400-C2620<br>95400-C2700</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400C2600_100* (*100 - 101)<br>95400C2610 100* (*100 - 101)<br>95400C2620 100* (*100 - 101)<br>95400C2700_100* (*100 - 101)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S36283341172024060300000" class="infoObjPrint"><h4>ELANTRA (UD/MD)</h4>
+      <a name="S27847475122023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra (UD &quot;5NP&quot;) (MD &quot;KMH&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">971. MD/UD IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S11868934742024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S13695029092023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="8" align="center" class="clsCellNormal">Elantra (UD &quot;5NP&quot;) (MD &quot;KMH&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X560/31/71/32/72/800/10/90/30/60/900<br><span class="clsEmphBOLD">(OLD SW ver 001~006) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3951</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X532/572/800/810/830/860/890/900<br><span class="clsEmphBOLD">(OLD SW ver 007,008) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3952</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X533/573/801/811/831/861/920/950/891/901/980/990 <span class="clsEmphBOLD">(OLD SW ver 009~012) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3953</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X533/573/801/811/831/861/920/950/891/901/980/990 <span class="clsEmphBOLD">(OLD SW ver 013) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3954</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3XEB0/EE0/EI0/EL0/HA0/HB0/HC0/HD0/HA1/HB1/HC1/HD1 <span class="clsEmphBOLD">(OLD SW ver 001~005) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3955</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X520 <span class="clsEmphBOLD">(OLD SW ver 001~006) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3957</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X530 <span class="clsEmphBOLD">(OLD SW ver 001~006) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3956</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">MD/UD BCM 95400-3X570 <span class="clsEmphBOLD">(OLD SW ver 001~006) </span></td>
+              <td valign="TOP" align="center" class="clsCellNormal">3958</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S19077283432024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S05572349562023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Elantra (UD &quot;5NP&quot;) (MD &quot;KMH&quot;)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">2011 - 2016</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X560<br>95400-3X531<br>95400-3X571</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X560_001* (*001 - 006)<br>954003X531_001* (*001 - 006)<br>954003X571_001* (*001 - 006)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">954003X***_0A0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X532<br>95400-3X572<br>95400-3X800<br>95400-3X810<br>95400-3X890<br>95400-3X900<br>95400-3X830<br>95400-3X860</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X532_006<br>954003X572_006<br>954003X800_006<br>954003X810_006<br>954003X890_006<br>954003X900_006<br>954003X830_006<br>954003X860_006</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X532<br>95400-3X572<br>95400-3X800<br>95400-3X810<br>95400-3X890<br>95400-3X900<br>95400-3X830<br>95400-3X860</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X532_007* (*007, 008)<br>954003X572_007* (*007, 008)<br>954003X800_007* (*007, 008)<br>954003X810_007* (*007, 008)<br>954003X890_007* (*007, 008)<br>954003X900_007* (*007, 008)<br>954003X830_007* (*007, 008)<br>954003X860_007* (*007, 008)<br>954003X***_0AA</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">Elantra (UD &quot;5NP&quot;) (MD &quot;KMH&quot;)</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">2011 - 2016</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X533<br>95400-3X573<br>95400-3X801<br>95400-3X811<br>95400-3X831<br>95400-3X861<br>95400-3X920<br>95400-3X950<br>95400-3X891<br>95400-3X901<br>95400-3X980<br>95400-3X990</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X533_009* (*009 - 012)<br>954003X573_009* (*009 - 012)<br>954003X801_009* (*009 - 012)<br>954003X811_009* (*009 - 012)<br>954003X831_009* (*009 - 012)<br>954003X861_009* (*009 - 012)<br>954003X920_009* (*009 - 012)<br>954003X950_009* (*009 - 012)<br>954003X891_009* (*009 - 012)<br>954003X901_009* (*009 - 012)<br>954003X980_009* (*009 - 012)<br>954003X990_009* (*009 - 012)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X***_0AA</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X533<br>95400-3X573<br>95400-3X801<br>95400-3X811<br>95400-3X831<br>95400-3X861<br>95400-3X920<br>95400-3X950<br>95400-3X891<br>95400-3X901<br>95400-3X980<br>95400-3X990</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X533_013<br>954003X573_013<br>954003X801_013<br>954003X811_013<br>954003X831_013<br>954003X861_013<br>954003X920_013<br>954003X950_013<br>954003X891_013<br>954003X901_013<br>954003X980_013<br>954003X990_013</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X***_0AA</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3XEB0<br>95400-3XEE0<br>95400-3XEI0<br>95400-3XEL0<br>95400-3XHA0<br>95400-3XHB0<br>95400-3XHC0<br>95400-3XHD0<br>95400-3XHA1<br>95400-3XHB1<br>95400-3XHC1<br>95400-3XHD1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003XEB0_001* (*001 - 005)<br>954003XEE0_001* (*001 - 005)<br>954003XEI0_001* (*001 - 005)<br>954003XEL0_001* (*001 - 005)<br>954003XHA0_001* (*001 - 005)<br>954003XHB0_001* (*001 - 005)<br>954003XHC0_001* (*001 - 005)<br>954003XHD0_001* (*001 - 005)<br>954003XHA1_001* (*001 - 005)<br>954003XHB1_001* (*001 - 005)<br>954003XHC1_001* (*001 - 005)<br>954003XHD1_001* (*001 - 005)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X***_0AA</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X530</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X530_001* (*001 - 006)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X530_0A0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X520</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X520_001* (*001 - 006)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X520_0A0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-3X570</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X570_001* (*001 - 006)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954003X570_0A0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S17383429922024060300000" class="infoObjPrint"><h4>ELANTRA (AD/ADa)</h4>
+      <a name="S37589224202023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra (AD &quot;KMH&quot;) (ADa &quot;5NP&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">933. AD(a) IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S23188178302024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S05996988412023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">Elantra (AD &quot;KMH&quot;) (ADa &quot;5NP&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 95400-F2AW0/BB0 (1.00 - 1.08)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 95400-F2AW0/BB0 (1.09 - 1.11)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2211</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 95400-F2AW1/BB1 (1.12, 200)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2202</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 954A0-F2AL0/AL1 (1.00 - 1.04)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2204</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 954A0-F2AL2/DB0 (1.05 - 1.06)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2206</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S41439674512024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S26442215252023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="10" align="center" class="clsCellNormal">Elantra (AD &quot;KMH&quot;) (ADa &quot;5NP&quot;)</td>
+              <td valign="MIDDLE" rowspan="10" align="center" class="clsCellNormal">2017 - 2020</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400F2AW0_100* (*100 - 108)</td>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">954*0F2*** 200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2BB0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400F2BB0_100* (*100 - 108)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-F2AL0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0F2AL0_100* (*100 - 104)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-F2AL1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0F2AL1_100* (*100 - 104)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">195400F2AW1_112<br>95400F2AW1_200</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">95400F2***_301</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2BB1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400F2BB1_112<br>95400F2BB1_200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-F2AL2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0F2AL2_105* (*105 - 106)</td>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">954*0F2***_300 or 954*0F2***_200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-F2DB0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0F2DB0_105* (*105 - 106)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2AW0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400F2AW0_109* (*109 - 111)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-F2BB0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400F2BB0_109* (*109 - 111)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S26899389602024060300000" class="infoObjPrint"><h4>ELANTRA (CN7/CN7a)</h4>
+      <a name="S27101995632023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7) (&quot;KMH&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">964. CN7 IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7a)(&quot;5NP&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">965. CN7a IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S04951882142024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S29086235782023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7)(&quot;KMH&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">CN7 BCM 95400-AA920/930/BQ0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9452</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Elantra (CN7a)(&quot;5NP&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">CN7a BCM 95400-AB100/10</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9541</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S00192790712024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S17295206532023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Elantra (CN7) &quot;KMH&quot;</td>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">2021 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-AA920</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400AA920_100* (*100 - 109)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">95400-AA**0_120</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-AA930</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400AA930_100* (*100 - 109)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-AABQ0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400AABQ0_100* (*100 - 109)</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Elantra (CN7a) &quot;5NP&quot;</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-AB100</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400AB100_100* (*100 - 106)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">95400-AB1*0_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-AB110</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400AB110_100* (*100 - 106)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S34998955622024060300000" class="infoObjPrint"><h4>ELANTRA GT (GD)</h4>
+      <a name="S28149103582023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra GT (GD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">990. GD IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S11821884942024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S37478896432023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">Elantra GT (GD)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5510</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5510</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5560</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5560</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5562</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5562</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5582</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5582</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5545</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5545</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5565</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5565</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">GD BCM 95400-A5585</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5585</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S23451566062024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S10294036442023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">Elantra GT (GD)</td>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">2013 - 2017</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5510</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5510_100<br>95400A5510_110<br>95400A5510_120<br>95400A5510_130<br>95400A5510_140</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5510_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5560</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5560_100<br>95400A5560_110<br>95400A5560_120<br>95400A5560_130<br>95400A5560_140</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5560_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5562</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5562_A00<br>95400A5562_100<br>95400A5562_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5562_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5582</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5582_A00<br>95400A5582_100<br>95400A5582_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5582_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5545</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5545_100<br>95400A5545_110<br>95400A5545_120</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5545_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5565</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5565_100<br>95400A5565_110<br>95400A5565_120</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5565_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5585</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5585_100<br>95400A5585_110<br>95400A5585_120<br>95400A5585_130</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400A5585_I00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S36043021282024060300000" class="infoObjPrint"><h4>ELANTRA GT (PD)</h4>
+      <a name="S22529954262023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Elantra GT (PD)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">976. PD IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S24516715082024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S02358157352023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="13" align="center" class="clsCellNormal">Elantra GT (PD)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (1.00/1.01/1.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">7631</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (1.03/1.04)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5423</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (1.06)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2611</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (4.00/4.01)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">1123</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (4.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9021</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3970 (6.00/6.01/6.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">8723</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (1.00/1.01/1.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">8472</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (1.03/1.04)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">7382</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (1.06)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">1097</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (4.00/4.01)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">8483</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (4.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9111</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G39AP0 (6.00/6.01/6.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0167</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">PD BCM 95400-G3972/AP2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">1010</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S08360945052024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S19755576642023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="14" align="center" class="clsCellNormal">Elantra GT (PD)</td>
+              <td valign="MIDDLE" rowspan="14" align="center" class="clsCellNormal">2018 - 2020</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">95400-G3970</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_100 (*100 - 102)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_655</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_103 (*103 - 104)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_677</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_1 06</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_688</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_400 (*400 - 401)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_700</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_402</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_755</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_600 (*600 - 602)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3970_800</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">95400-G3AP0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_100 (*100 - 102)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 655</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_103 (*103 - 104)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 677</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_106</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 688</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_400 (*400 - 401)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 700</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_402</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 755</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0_600 (*600 - 602)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP0 800</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-G3972</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3972_105<br>95400G3972_300* (*300 - 301)<br>95400G3972_500* (*500 - 502)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3**2_800</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-G3AP2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3AP2_105<br>95400G3AP2_300* (*300 - 301)<br>95400G3AP2_500* (*500 - 502)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400G3**2_900</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S17022459372024060300000" class="infoObjPrint"><h4>VENUE (QX)</h4>
+      <a name="S39210166022023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Venue (QX)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">934.QX IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S18384823792024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S19967480962023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Venue (QX)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">BCM 95400-K2500/01/10/11, 954A0-K2240/41</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S32895235922024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S40843798602023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">Venue (QX)</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">2020 - 2021</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2500</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2500_0</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">954*0-K2***_1</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2510</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2510_0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2501</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2501_0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2511</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-K2511_0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-K2241</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-K2241_0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-K2240</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-K2240_0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S22529474082024060300000" class="infoObjPrint"><h4>VELOSTER (FS)(JS)</h4>
+      <a name="S02973445752023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Veloster (FS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">966. FS IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Veloster (JS)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">968. JS IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S04979135282024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S26282843992023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Veloster (FS)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">FS BCM 95400-2V070/1 (1.00~1.11)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2070</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">FS BCM 95400-2V074/54 (1.00~1.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2074</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">FS BCM 95400-2V074/184/054 (1.03~1.05)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2184</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">FS BCM 95400-2V057/077/187 (2.00~2.05)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2057</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Veloster (JS)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">JS BCM 95400-J3720</td>
+              <td valign="TOP" align="center" class="clsCellNormal">5400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S33044140102024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S42550759642023052500000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">Veloster (FS)</td>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">2012 - 2017</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2V054<br>95400-2V074</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V054_100* (*100 - 102)<br>954002V074_100* (*100 - 102)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V***_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2V070<br>95400-2V071</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V070_100* (*100 - 111)<br>954002V071_100* (*100 - 111)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">954002V***_120</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2V074</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V074_103* (*103 - 105)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2V054<br>95400-2V184</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V054_103* (*103 - 105)<br>954002V184_103* (*103 - 105)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2V057<br>95400-2V077<br>95400-2V187</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V057_200* (*200 - 205)<br>954002V077_200* (*200 - 205)<br>954002V187_200* (*200 - 205)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002V***_210</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Veloster (JS)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2019 - 2021</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-J3720</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-J3720_0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-J3720_1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S23804478282023112800000" class="infoObjPrint"><h4>KONA (OS)</h4>
+      
+      <div id="S19855925082024060300000" class="infoObjPrint"><h5>GDS INFORMATION</h5>
+        <a name="S40914278592023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Kona (OS)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">975. OS IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S21054174452024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S35731667292023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Kona (OS)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">OS BCM 95400-J9GE0~LA0 (1.00/1.01/1.02)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4485</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">OS BCM 954A0-J9GJ0~LA0 (1.03/1.04/1.05/1.06/1.07/1.08)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">7840</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">OS BCM 954C0-J9BK0~BZ0 (1.00/1.01/1.02/1.03/1.04/1.05)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2222</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><span class="clsEmphBOLD">Information </span></p>
+        <p><span class="clsEmphBOLD">When selecting the manual update PASSCODE for Kona (OS), only look at the first 5 prefix of the BCM number. For example 95400-J9GE0, use the passcode 4485 because the first 5 prefix are 95400. </span></p>
+      </div>
+      <div id="S28339185362024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S20335645052023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Kona (OS)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2018 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-J9GE0<br>95400-J9GF0<br>95400-J9GG0<br>95400-J9GH0<br>95400-J9GJ0<br>95400-J9GK0<br>95400-J9GL0<br>95400-J9GM0<br>95400-J9HG0<br>95400-J9HJ0<br>95400-J9HK0<br>95400-J9HL0<br>95400-J9HM0<br>95400-J9HN0<br>95400-J9HP0<br>95400-J9HR0<br>95400-J9KH0<br>95400-J9KJ0<br>95400-J9KK0<br>95400-J9KL0<br>95400-J9KX0<br>95400-J9KY0<br>95400-J9KZ0<br>95400-J9LA0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400J9GE0_100* (*100 - 102)<br>95400J9GF0_100* (*100 - 102)<br>95400J9GG0_100* (*100 - 102)<br>95400J9GH0_100* (*100 - 102)<br>95400J9GJ0_100* (*100 - 102)<br>95400J9GK0_100* (*100 - 102)<br>95400J9GL0_100* (*100 - 102)<br>95400J9GM0_1 00* (*100 - 102)<br>95400J9HG0_100* (*100 - 102)<br>95400J9HJ0_100* (*100 - 102)<br>95400J9HK0_100* (*100 - 102)<br>95400J9HL0_100* (*100 - 102)<br>95400J9HM0_100* (*100 - 102)<br>95400J9HN0_100* (*100 - 102)<br>95400J9HP0_100* (*100 - 102)<br>95400J9HR0_100* (*100 - 102)<br>95400J9KH0_100* (*100 - 102)<br>95400J9KJ0_100* (*100 - 102)<br>95400J9KK0_100* (*100 - 102)<br>95400J9KL0_1 00* (*100 - 102)<br>95400J9KX0_100* (*100 - 102)<br>95400J9KY0_100* (*100 - 102)<br>95400J9KZ0_100* (*100 - 102)<br>95400J9LA0_100* (*100 - 102)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400J9**0_300</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Kona (OS)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">2018 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-J9GJ0<br>954A0-J9GK0<br>954A0-J9GL0<br>954A0-J9GM0<br>954A0-J9HM0<br>954A0-J9HN0<br>954A0-J9HP0<br>954A0-J9HR0<br>954A0-J9KH0<br>954A0-J9KJ0<br>954A0-J9KK0<br>954A0-J9KL0<br>954A0-J9KX0<br>954A0-J9KY0<br>954A0-J9KZ0<br>954A0-J9LA0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0J9GJ0_103* (*103 - 108)<br>954A0J9GK0_103* (*103 - 108)<br>954A0J9GL0_103* (*103 - 108)<br>954A0J9GM0_103* (*103 - 108)<br>954A0J9HM0_103* (*103 - 108)<br>954A0J9HN0_103* (*103 - 108)<br>954A0J9HP0_103* (*103 - 108)<br>954A0J9HR0_103* (*103 - 108)<br>954A0J9KH0_103* (*103 - 108)<br>954A0J9KJ0_103* (*103 - 108)<br>954A0J9KK0_103* (*103 - 108)<br>954A0J9KL0_103* (*103 - 108)<br>954A0J9KX0_103* (*103 - 108)<br>954A0J9KY0_103* (*103 - 108)<br>954A0J9KZ0_103* (*103 - 108)<br>954A0J9LA0_103* (*103 - 108)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0J9**0_300</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954C0-J9BK0<br>954C0-J9BL0<br>954C0-J9BM0<br>954C0-J9BN0<br>954C0-J9BW0<br>954C0-J9BX0<br>954C0-J9BY0<br>954C0-J9BZ0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954C0J9BK0_100* (*100 - 105)<br>954C0J9BL0_100* (*100 - 105)<br>954C0J9BM0_100* (*100 - 105)<br>954C0J9BN0_100* (*100 - 105)<br>954C0J9BW0_100* (*100 - 105)<br>954C0J9BX0_100* (*100 - 105)<br>954C0J9BY0_100* (*100 - 105)<br>954C0J9BZ0_100* (*100 - 105)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954C0J9**0_300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S42508300702024060300000" class="infoObjPrint"><h4>ACCENT (HC)</h4>
+      <a name="S11808841042023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Accent (HC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">967. HC IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S19610326302024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S09293461582023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Accent (HC)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">HC BCM 95400-J0400/410/420/430/440/450/460/470/560/570/580/59 0/600/610/620/630</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9351</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S36918289632024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S10742279332023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">Accent (HC)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2018 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-J0400<br>95400-J0410<br>95400-J0420<br>95400-J0430<br>95400-J0440<br>95400-J0450<br>95400-J0460<br>95400-J0470<br>95400-J0560<br>95400-J0570<br>95400-J0580<br>95400-J0590<br>95400-J0600<br>95400-J0610<br>95400-J0620<br>95400-J0630</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400J0400_100* (*100 - 300)<br>95400J0410_100* (*100 - 300)<br>95400J0420_100* (*100 - 300)<br>95400J0430_100* (*100 - 300)<br>95400J0440_100* (*100 - 300)<br>95400J0450_100* (*100 - 300)<br>95400J0460 100* (*100 - 300)<br>95400J0470 100* (*100 - 300)<br>95400J0560_100* (*100 - 300)<br>95400J0570_100* (*100 - 300)<br>95400J0580_100* (*100 - 300)<br>95400J0590_100* (*100 - 300)<br>95400J0600_100* (*100 - 300)<br>95400J0610_100* (*100 - 300)<br>95400J0620_100* (*100 - 300)<br>95400J0630_100* (*100 - 300)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400J0***_310</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S15818644242024060300000" class="infoObjPrint"><h4>SANTA FE SPORT (AN)</h4>
+      <a name="S07255100592023112800000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Santa Fe Sport (AN)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">962. AN IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S22172594232024060300000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S32888164932023112800000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="16" align="center" class="clsCellNormal">Santa Fe Sport (AN)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z100(3.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4100</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z110(3.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z101(4.00/5.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4101</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z111(4.00/5.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4111</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z200(1.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4200</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z210(1.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4210</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z240(1.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4240</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z250(1.00)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4250</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z300(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4300</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z310(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4310</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z320(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4320</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z330(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4330</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z340(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4340</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z350(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4350</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z360(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4360</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">AN BCM 95400-4Z370(1.00/1.10)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4370</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S28265766922024060300000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S32441060732023112800000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">Santa Fe Sport (AN)</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">2013 - 2018</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z100<br>95400-4Z110</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z100_300<br>954004Z110_300</td>
+              <td valign="MIDDLE" rowspan="6" align="center" class="clsCellNormal">95400-4Z**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z101<br>95400-4Z111</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z101_400* (*400 - 500)<br>954004Z111_400* (*400 - 500)</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z200<br>95400-4Z210<br>95400-4Z240<br>95400-4Z250</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z200_100<br>954004Z210_100<br>954004Z240_100<br>954004Z250_100</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z300</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z300_100<br>954004Z300_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z310</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z310_100<br>954004Z310_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z320</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z320_100<br>954004Z320_110</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">Santa Fe Sport (AN)</td>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">2013 - 2018</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z330</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z330_100<br>954004Z330_110</td>
+              <td valign="MIDDLE" rowspan="5" align="center" class="clsCellNormal">95400-4Z**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z340</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z340_100<br>954004Z340_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z350</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z350_100<br>954004Z350_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z360</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z360_100<br>954004Z360_110</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z370</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z370_100<br>954004Z370_110</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S19817638492023062700000" class="infoObjPrint"><h4>SANTA FE(NC); SANTA FE XL (NC)</h4>
+      <a name="S22095333702024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Santa Fe (NC) Santa Fe XL (NC)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">972. NC IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S02814178052023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S15499852642024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">Santa Fe (NC) Santa Fe XL (NC)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-4Z240</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0804</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8900</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0098</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8910</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0198</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8FO0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0800</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8FN0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0801</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8FP0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0802</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NC BCM 95400-B8FQ0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0803</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S40411721662023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S22560872262024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">Santa Fe (NC) Santa Fe XL (NC)</td>
+              <td valign="MIDDLE" rowspan="7" align="center" class="clsCellNormal">2013 - 2018 2019</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-4Z240</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z240_100</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954004Z240_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8900</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8900_100<br>95400B8900_300</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8900_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8910</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8910_100<br>95400B8910_300</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8910_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8FO0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FO0_100<br>95400B8FO0_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FO0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8FN0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FN0_100<br>95400B8FN0_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FN0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8FP0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FP0_100<br>95400B8FP0_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FP0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-B8FQ0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FQ0_100<br>95400B8FQ0_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400B8FQ0_I00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S39764684352023062700000" class="infoObjPrint"><h4>SANTA FE (TMa)</h4>
+      <a name="S40921580522024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Santa Fe (TMa)(&quot;5NM&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">979. TM IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S03588334372023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S06946136682024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Santa Fe (TMa)(&quot;5NM&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">TM BCM 95400-S2500/510/520/530/580/590/600/610</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2610</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">TM BCM 954A0-S2500/510/520/530/CA0/CB0/CC0/CD0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2500</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">TM PE BCM 954B0-S2BL0 ~ 954B0-S2RD0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2010</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">TM PE BCM 954B0-S2BL2 ~ 954B0-S2RD2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S17018919352023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S30428068632024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Santa Fe (TMa) (&quot;5NM&quot;)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">2019 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-S2500<br>95400-S2510<br>95400-S2520<br>95400-S2530<br>95400-S2580<br>95400-S2590<br>95400-S2600<br>95400-S2610</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400S2500_100* (*100 - 102)<br>95400S2510_100* (*100 - 102)<br>95400S2520_100* (*100 - 102)<br>95400S2530_100* (*100 - 102)<br>95400S2580_100* (*100 - 102)<br>95400S2590_100* (*100 - 102)<br>95400S2600_100* (*100 - 102)<br>95400S2610_100* (*100 - 102)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-S2**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-S2500<br>954A0-S2510<br>954A0-S2520<br>954A0-S2530<br>954A0-S2CA0<br>954A0-S2CB0<br>954A0-S2CC0<br>954A0-S2CD0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S2500_102* (*102, 200, 201, 202, 204)<br>954A0S2510_102* (*102, 200, 201, 202, 204)<br>954A0S2520_102* (*102, 200, 201, 202, 204)<br>954A0S2530_102* (*102, 200, 201, 202, 204)<br>954A0S2CA0_102* (*102, 200, 201, 202, 204)<br>954A0S2CB0_102* (*102, 200, 201, 202, 204)<br>954A0S2CC0_102* (*102, 200, 201, 202, 204)<br>954A0S2CD0_102* (*102, 200, 201, 202, 204)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-S2**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Santa Fe (TMa) (&quot;5NM&quot;)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">2019 - 2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0-S2BL0<br>954B0-S2BP0<br>954B0-S2CA0<br>954B0-S2CB0<br>954B0-S2CC0<br>954B0-S2CD0<br>954B0-S2CJ0<br>954B0-S2CM0<br>954B0-S2CN0<br>954B0-S2CP0<br>954B0-S2DA0<br>954B0-S2DB0<br>954B0-S2PC0<br>954B0-S2PD0<br>954B0-S2PJ0<br>954B0-S2PK0<br>954B0-S2PL0<br>954B0-S2PM0<br>954B0-S2PN0<br>954B0-S2PP0<br>954B0-S2RA0<br>954B0-S2RB0<br>954B0-S2RC0<br>954B0-S2RD0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0S2BL0_100<br>954B0S2BP0_100<br>954B0S2CA0_100<br>954B0S2CB0_100<br>954B0S2CC0_100<br>954B0S2CD0_100<br>954B0S2CJ0_100<br>954B0S2CM0_100<br>954B0S2CN0_100<br>954B0S2CP0_100<br>954B0S2DA0_100<br>954B0S2DB0_100<br>954B0S2PC0_100<br>954B0S2PD0_100<br>954B0S2PJ0_100<br>954B0S2PK0_100<br>954B0S2PL0_100<br>954B0S2PM0_100<br>954B0S2PN0_100<br>954B0S2PP0_100<br>954B0S2RA0_100<br>954B0S2RB0_100<br>954B0S2RC0_100<br>954B0S2RD0_100</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0-S2**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0-S2BL2<br>954B0-S2BP2<br>954B0-S2CA2<br>954B0-S2CB2<br>954B0-S2CC2<br>954B0-S2CD2<br>954B0-S2CJ2<br>954B0-S2CM2<br>954B0-S2CN2<br>954B0-S2CP2<br>954B0-S2DA2<br>954B0-S2DB2<br>954B0-S2PC2<br>954B0-S2PD2<br>954B0-S2PJ2<br>954B0-S2PK2<br>954B0-S2PL2<br>954B0-S2PM2<br>954B0-S2PN2<br>954B0-S2PP2<br>954B0-S2RA2<br>954B0-S2RB2<br>954B0-S2RC2<br>954B0-S2RD2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0S2BL2_200<br>954B0S2BP2_200<br>954B0S2CA2_200<br>954B0S2CB2_200<br>954B0S2CC2_200<br>954B0S2CD2_200<br>954B0S2CJ2_200<br>954B0S2CM2_200<br>954B0S2CN2_200<br>954B0S2CP2_200<br>954B0S2DA2_200<br>954B0S2DB2_200<br>954B0S2PC2_200<br>954B0S2PD2_200<br>954B0S2PJ2_200<br>954B0S2PK2_200<br>954B0S2PL2_200<br>954B0S2PM2_200<br>954B0S2PN2_200<br>954B0S2PP2_200<br>954B0S2RA2_200<br>954B0S2RB2_200<br>954B0S2RC2_200<br>954B0S2RD2_200</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954B0-S2**2_I00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S30698827652023062700000" class="infoObjPrint"><h4>PALISADE (LX2)</h4>
+      <a name="S09931009702024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Palisade (LX2)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">970.LX2 IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S33721608752023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S41689842352024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Palisade (LX2)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">LX2 BCM 95400-S8MB0/C0/D0/E0/H0/I0/J0/K0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0080</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LX2 BCM 954A0-S8MB0/C0/D0/E0/H0/I0/J0/K0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0081</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LX2 BCM 954A0-S8MB2/C2/D2/E2/H2/I2/J2/K2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0082</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LX2 BCM 954A0-S8MB3/C3/D3/E3/H3/I3/J3/K3</td>
+              <td valign="TOP" align="center" class="clsCellNormal">0083</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S07969411512023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S14543759652024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Palisade (LX2)</td>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">2020 - 2021</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-S8MB0<br>95400-S8MC0<br>95400-S8MD0<br>95400-S8ME0<br>95400-S8MH0<br>95400-S8MI0<br>95400-S8MJ0<br>95400-S8MK0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400S8MB0_100* (*100 - 105)<br>95400S8MC0_100* (*100 - 105)<br>95400S8MD0_100* (*100 - 105)<br>95400S8ME0_100* (*100 - 105)<br>95400S8MH0_100* (*100 - 105) 95400S8MI0_100* (*100 - 105)<br>95400S8M J0_100* (*100 - 105)<br>95400S8MK0_100* (*100 - 105)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400S8M*0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-S8MB0<br>954A0-S8MC0<br>954A0-S8MD0<br>954A0-S8ME0<br>954A0-S8MH0<br>954A0-S8MI0<br>954A0-S8MJ0<br>954A0-S8MK0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8MB0_200* (*200 - 203)<br>954A0S8MC0_200* (*200 - 203)<br>954A0S8MD0_200* (*200 - 203)<br>954A0S8ME0_200* (*200 - 203)<br>954A0S8MH0_200* (*200 - 203)<br>954A0S8MI0_200* (*200 - 203<br>954A0S8MJ0_200* (*200 - 203)<br>954A0S8MK0_200* (*200 - 203)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8M*0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-S8MB2<br>954A0-S8MC2<br>954A0-S8MD2<br>954A0-S8ME2<br>954A0-S8MH2<br>954A0-S8MI2<br>954A0-S8MJ2<br>954A0-S8MK2</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8MB2_204* (*204,300,400)<br>954A0S8MC2_204* (*204,300,400)<br>954A0S8MD2_204* (*204,300,400)<br>954A0S8ME2_204* (*204,300,400)<br>954A0S8MH2_204* (*204,300,400)<br>954A0S8MI2_204* (*204,300,400)<br>954A0S8MJ2_204* (*204,300,400)<br>954A0S8MK2_204* (*204,300,400)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8M*2_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0-S8MB3<br>954A0-S8MC3<br>954A0-S8MD3<br>954A0-S8ME3<br>954A0-S8MH3<br>954A0-S8MI3<br>954A0-S8MJ3<br>954A0-S8MK3</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8MB3_500* (*500, 600)<br>954A0S8MC3_500* (*500, 600)<br>954A0S8MD3_500* (*500, 600)<br>954A0S8ME3_500* (*500, 600)<br>954A0S8MH3_500* (*500, 600)<br>954A0S8MI3_500* (*500, 600)<br>954A0S8MJ3_500* (*500, 600)<br>954A0S8MK3_500* (*500, 600)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954A0S8M*3_I00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S05682309292023062700000" class="infoObjPrint"><h4>TUCSON (LM)</h4>
+      <a name="S29388136452024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Tucson (LM)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">969. LM IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S20480438232023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S26321867862024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Tucson (LM)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">LM BCM 95400-2S710 (003/004/005)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2210</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LM BCM 95400-2S711 (006)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2211</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LM BCM 95400-2S712 (007/008)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2212</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">LM BCM 95400-2SEB0 (001/002/003/004/005)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S16048297502023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S08146288652024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Tucson (LM)</td>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">2011 - 2015</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2S710</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S710_003<br>954002S710_004<br>954002S710_005</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S710_020</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2S711</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S711_006</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S711_020</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2S712</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S712_007<br>954002S712_008</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002S712_020</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2SEB0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002SEB0_001<br>954002SEB0_002<br>954002SEB0_003<br>954002SEB0_004<br>954002SEB0_005</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002SEB0_020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S31343872282023062700000" class="infoObjPrint"><h4>TUCSON (TL)</h4>
+      <a name="S26824971702024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Tucson (TL)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">978. TL IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S18872885952023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S31841443352024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Tucson (TL)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">TL BCM 95400-D3600/610/620/630/GA0/GB0/GD0/GE0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9471</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">TL PE BCM 95410-D3980/990/AA0/AB0/AG0/AH0/AJ0/AK0/CT0/CV0/CW0/CX0/DC0/DD0/DE0/DF0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9472</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S19605325492023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S32471749362024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Tucson (TL)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">2016 - 2021</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-D3600<br>95400-D3610<br>95400-D3620<br>95400-D3630<br>95400-D3GA0<br>95400-D3GB0<br>95400-D3GD0<br>95400-D3GE0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400D3600_100* (*100 - 106)<br>95400D3610_100* (*100 - 106)<br>95400D3620_100* (*100 - 106)<br>95400D3630_100* (*100 - 106)<br>95400D3GA0_100* (*100 - 106)<br>95400D3GB0_100* (*100 - 106)<br>95400D3GD0_100* (*100 - 106)<br>95400D3GE0_100* (*100 - 106)<br>95400D3600_300* (*300 - 302)<br>95400D3610_300* (*300 - 302)<br>95400D3620_300* (*300 - 302)<br>95400D3630_300* (*300 - 302)<br>95400D3GA0_300* (*300 - 302)<br>95400D3GB0_300* (*300 - 302)<br>95400D3GD0_300* (*300 - 302)<br>95400D3GE0_300* (*300 - 302)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-D3**0_I.00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95410-D3980<br>95410-D3990<br>95410-D3AA0<br>95410-D3AB0<br>95410-D3AG0<br>95410-D3AH0<br>95410-D3AJ0<br>95410-D3AK0<br>95410-D3CT0<br>95410-D3CV0<br>95410-D3CW0<br>95410-D3CX0<br>95410-D3DC0<br>95410-D3DD0<br>95410-D3DE0<br>95410-D3DF0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95410D3980_100* (*100 - 104)<br>95410D3990_100* (*100 - 104)<br>95410D3AA0_100* (*100 - 104)<br>95410D3AB0_100* (*100 - 104)<br>95410D3AG0_100* (*100 - 104)<br>95410D3AH0_100* (*100 - 104)<br>95410D3AJ0_100* (*100 - 104)<br>95410D3AK0_100* (*100 - 104)<br>95410D3CT0_1 00* (*100 - 104)<br>95410D3CV0_100* (*100 - 104)<br>95410D3CW0_100* (*100 - 104)<br>95410D3CX0_100* (*100 - 104)<br>95410D3DC0_100* (*100 - 104)<br>95410D3DD0_100* (*100 - 104)<br>95410D3DE0_100* (*100 - 104)<br>95410D3DF0_100* (*100 - 104)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95410-D3**0_I.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S05699454812023062700000" class="infoObjPrint"><h4>TUCSON (NX4/NX4a)</h4>
+      <a name="S12149942862024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Tucson (NX4) (&quot;KM8&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">973. NX4 IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Tucson (NX4a) (&quot;5NM&quot;)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">974. NX4a IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S36040746122023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S33305521802024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Tucson (NX4) (&quot;KM8&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">NX4 BCM 95400-N9000/010/120/130/180/190</td>
+              <td valign="TOP" align="center" class="clsCellNormal">1238</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NX4 BCM 95400-N9001/011/121/131/181/191</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9181</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NX4 BCM 95400-N9002/012/122/132/182/192</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9182</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Tucson (NX4a) (&quot;5NM&quot;)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">NX4a BCM 95400-CW000/50</td>
+              <td valign="TOP" align="center" class="clsCellNormal">4050</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">NX4a BCM 95400-CW001/51</td>
+              <td valign="TOP" align="center" class="clsCellNormal">9551</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S15264357432023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S26478225522024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Tucson (NX4) (&quot;KM8&quot;)</td>
+              <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9000<br>95400-N9010<br>95400-N9120<br>95400-N9130<br>95400-N9180<br>95400-N9190</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400N9000_100* (*100 - 104)<br>95400N9010_100* (*100 - 104)<br>95400N9120_100* (*100 - 104)<br>95400N9130_100* (*100 - 104)<br>95400N9180_100* (*100 - 104)<br>95400N9190_100* (*100 - 104)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9**0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9001<br>95400-N9011<br>95400-N9121<br>95400-N9131<br>95400-N9181<br>95400-N9191</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400N9001_100* (*105 - 106)<br>95400N9011_100* (*105 - 106)<br>95400N9121_100* (*105 - 106)<br>95400N9131_100* (*105 - 106)<br>95400N9181_100* (*105 - 106)<br>95400N9191_100* (*105 - 106)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9**1_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9002<br>95400-N9012<br>95400-N9122<br>95400-N9132<br>95400-N9182<br>95400-N9192</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400N9002_100* (*100 - 112)<br>95400N9012_100* (*100 - 112)<br>95400N9122_100* (*100 - 112)<br>95400N9132_100* (*100 - 112)<br>95400N9182_100* (*100 - 112)<br>95400N9192_100* (*100 - 112)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-N9**2_I00</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Tucson (NX4a) (&quot;5NM&quot;)</td>
+              <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">2022</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-CW000<br>95400-CW050</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400CW000_100* (*100 - 104)<br>95400CW050_100* (*100 - 104)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-CW0*0_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-CW001<br>95400-CW051</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400CW001_100* (*100 - 106)<br>95400CW051_100* (*100 - 106)</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-CW0*1_I00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S37072217922023062700000" class="infoObjPrint"><h4>GENESIS COUPE (BK)</h4>
+      <a name="S14651015692024060300000"></a><div class="clsTableTitle">EVENT INFORMATION</div><br><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th valign="BOTTOM" align="center" class="clsCellNormal">MODEL</th>
+            <th valign="BOTTOM" align="center" class="clsCellNormal">EVENT DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="center" class="clsCellNormal">Genesis Coupe (BK)</td>
+            <td valign="TOP" align="center" class="clsCellNormal">963. BK IMMOBILIZER (BCM) LOGIC IMPROVEMENT</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="S27844562532023062700000" class="infoObjPrint"><h5>MANUAL MODE PASSCODE INFORMATION TABLE</h5>
+        <a name="S14783587002024060300000"></a><div class="clsTableTitle">MANUAL MODE PASSCODE INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">MENU</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">PASSCODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="12" align="center" class="clsCellNormal">Genesis Coupe (BK)</td>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M860</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2860</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M865</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2865</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M870</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2870</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M875</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2875</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M861</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2861</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M866</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2866</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M871</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2871</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M876</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2876</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M862</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2862</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M867</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2867</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M872</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2872</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">BK BCM 95400-2M877</td>
+              <td valign="TOP" align="center" class="clsCellNormal">2877</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S25948761162023062700000" class="infoObjPrint"><h5>ROM ID INFORMATION TABLE</h5>
+        <a name="S36028740152024060300000"></a><div class="clsTableTitle">ROM ID INFORMATION TABLE</div><br><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <thead>
+            <tr class="clsTblHead">
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">MODEL YEAR</th>
+              <th valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">BCM/IBU P/N</th>
+              <th colspan="2" valign="BOTTOM" align="center" class="clsCellNormal">ROM ID</th>
+            </tr>
+            <tr class="clsTblHead">
+              <th valign="BOTTOM" align="center" class="clsCellNormal">OLD</th>
+              <th valign="BOTTOM" align="center" class="clsCellNormal">NEW</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">Genesis Coupe (BK)</td>
+              <td valign="MIDDLE" rowspan="4" align="center" class="clsCellNormal">2013 - 2014</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M860</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M860_110<br>954002M860_120<br>954002M860_130<br>954002M860_140<br>954002M860_150</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M860_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M865</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M865_110<br>954002M865_120<br>954002M865_130<br>954002M865_140<br>954002M865_150</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M865_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M870</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M870_110<br>954002M870_120<br>954002M870_130<br>954002M870_140<br>954002M870_150</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M870_I00</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M875</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M875_110<br>954002M875_120<br>954002M875 130<br>954002M875 140<br>954002M875_150</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M875_I00</td>
+            </tr>
+            <tr>
+              <td valign="MIDDLE" rowspan="8" align="center" class="clsCellNormal">Genesis Coupe (BK)</td>
+              <td valign="MIDDLE" rowspan="8" align="center" class="clsCellNormal">2013 - 2014</td>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M861</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M861_2.0<br>954002M861_3.0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M861_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M866</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M866_2.0<br>954002M866_3.0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M866_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M871</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M871_2.0<br>954002M871_3.0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M871_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M876</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M876_2.0<br>954002M876_3.0</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M876_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M862</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M862_4.1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M862_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M867</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M867_4.1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M867_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M872</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M872_4.1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M872_I.0</td>
+            </tr>
+            <tr>
+              <td valign="TOP" align="center" class="clsCellNormal">95400-2M877</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M877_4.1</td>
+              <td valign="TOP" align="center" class="clsCellNormal">954002M877_I.0</td>
+            </tr>
+          </tbody>
+        </table><a name="S259487611620230627000001"></a><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G16441766">
+                  <div class="imageHeader"><a name="S00888775732024060300000"></a></div><img alt="G16441766" src="../images/G16441766.png" name="G16441766"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table><a name="S259487611620230627000001"></a><table cellspacing="0" class="clsArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G16441767">
+                  <div class="imageHeader"><a name="S17741962642024060300000"></a></div><img alt="G16441767" src="../images/G16441767.png" name="G16441767"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="S23197523462024021400000" class="infoObjPrint"><h4>ANTI-THEFT DECAL INSTALLATION TEMPLATE</h4>
+      
+      <ol class="ARABICNUM">
+        <li>Fold the bottom of the page upward at the solid line as indicated below.</li>
+        <li>Cut the two rectangles out as indicated below.</li>
+        <li>Align the template closely, approximately 1/4&quot; to the existing label's edge.</li>
+        <li>Use masking tape to tape down the template onto the glass and door panel.</li>
+        <li>Carefully peel the anti-theft decal paper side halfway and align it to the template.</li>
+        <li>Use thumb to firmly press the label down onto the window glass.</li>
+        <li>Ensure there are no visible bubbles within the decal.</li>
+      </ol><a name="S231975234620240214000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G16441768">
+                <div class="imageHeader"><a name="S05660564352024060300000"></a></div><img alt="G16441768" src="../images/G16441768.png" name="G16441768"><span class="imageCourtesyNote"></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="S231975234620240214000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_G16441769">
+                <div class="imageHeader"><a name="S42160346012024060300000"></a></div><img alt="G16441769" src="../images/G16441769.png" name="G16441769"><span class="imageCourtesyNote"></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

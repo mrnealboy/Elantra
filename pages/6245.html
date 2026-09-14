@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Smart Key Unit — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Electrical/">Electrical</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Electrical/Starter/">Starter</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23412.html">Button Engine Start System (Except HEV)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23412.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23412.html#Description%20%26%20Operation/Description/">Description</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6245.html">Smart Key Unit</a></div><div class="main"><h1>Smart Key Unit</h1><div id="S33123977912022071500000"><a name="S331239779120220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_G14600471">
+            <div class="imageHeader"><a name="S34002661782022071500000"></a></div><img alt="G14600471" src="../images/G14600471.jpeg" name="G14600471"><span class="imageCourtesyNote">Courtesy of HYUNDAI MOTOR AMERICA</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The SMK manages all function related to:</p>
+  <ul class="BULLET">
+    <li>&quot;Start Stop Button (SSB) monitoring&quot;,</li>
+    <li>&quot;Immobilizer communication&quot; (with Engine Management System unit for immobilizer release),</li>
+    <li>&quot;Authentication server&quot; (Validity of Transponder and in case of Smart Key option Passive Fob authentication),</li>
+    <li>&quot;System consistency monitoring&quot;,</li>
+    <li>&quot;System diagnosis&quot;,</li>
+    <li>Control of display message/warning buzzer.</li>
+  </ul>
+  <p>The unit behaves as Master role in the whole system.</p>
+  <p>In case of SMART KEY application, for example &quot;Passive Access&quot;, &quot;Passive Locking&quot; and &quot;Passive Authorization are integrated for Terminal switching Operations&quot;.</p>
+  <p>It collects information about vehicle status from other modules (vehicle speed, alarm status, driver door open...), reads the inputs (e.g. SSB, Capacitive Sensor/Lock Button, PARK position Switch), controls the outputs (e.g. exterior and interior antennas), and communicates with others devices via the CAN network as well as a single line interfaces.</p>
+  <p>The diagnosis and learning of the components of the BES System are also handled by the SMK.</p>
+  <p>The SMK manages the functions related to the &quot;terminal control&quot; by activating external relays for ACC, IGN1 and IGN2. This unit is also responsible for the control of the STARTER relay.</p>
+  <p>The SMK is also controlling the illumination of the SSB as well as the &quot;system status indicator&quot;, which consists of 2 LEDs of different color. The illumination of the fob holder is also managed by the SMK.</p>
+  <p>The SMK reads the inputs (Engine fob in, vehicle speed, relays contact status), controls the outputs (Engine relay output drivers), and communicates with others devices via the CAN.</p>
+  <p>The internal architecture of the SMK is defined in a way that the control of the terminal is secured even in case of failure of one of the two micro controllers, system inconsistency or interruption of communication on the CAN network.</p>
+  <p>In case, failure of one of the two controllers, the remaining controller shall disable the starter relay. The IGN1 and IGN2 terminals relays shall be maintained in the state memorized before the failure and the driver shall be able to switch those IGN terminals off by pressing the SSB with EMERGENCY_STOP pressing sequence. However, engine restart will not be allowed. The state of the ACC relay will depend on the type of failure.</p>
+  <p>The main functions of the SMK are:</p>
+  <ul class="BULLET">
+    <li>Control of Terminal relays</li>
+    <li>Monitoring of the Vehicle speed received from sensor or ABS/ESP ECU.</li>
+    <li>Control of SSB LEDs (illumination, clamp state).</li>
+    <li>Control of the base station located in SSB through direct serial interface.</li>
+    <li>System consistency monitoring to diagnose SMK failure and to switch to relevant limp home mode.</li>
+    <li>Providing vehicle speed information</li>
+    <li>Start Stop Button (SSB) monitoring</li>
+    <li>Starter power control</li>
+  </ul>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC Information And Inspection: DTC Detecting Condition — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13449.html">Engine Control System Diagnosis - 1.6L (Except HEV) (6 Of 6)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13449.html#DTC%20U01B0-00%3A%20Lost%20Communication%20With%20Battery%20Monitor%20Module/">DTC U01B0-00: Lost Communication With Battery Monitor Module</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13449.html#DTC%20U01B0-00%3A%20Lost%20Communication%20With%20Battery%20Monitor%20Module/DTC%20Information%20And%20Inspection/">DTC Information And Inspection</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13587.html">DTC Detecting Condition</a></div><div class="main"><h1>DTC Information And Inspection: DTC Detecting Condition</h1><div id="S34824703862022071500000"><a name="S348247038620220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+      <col span="1" id="COL3" align="left">
+      <col span="1" id="COL4" align="left">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Trouble Shooting</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Condition</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Possible Cause</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Main Action</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Monitor the CAN communication</li>
+          </ul>
+        </td>
+        <td valign="MIDDLE" rowspan="6" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Faulty Power Supply</li>
+            <li>Open/Poor Connection in &quot;BATTERY SENSOR&quot;'s Signal Circuit</li>
+            <li>Short in &quot;BATTERY SENSOR&quot;'s Signal Circuit</li>
+            <li>&quot;BATTERY SENSOR&quot;'s Signal Circuit protocol error by electrical noise</li>
+            <li>Faulty &quot;BATTERY SENSOR&quot;</li>
+            <li>Faulty ICU*</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Prerequisite Condition</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Power voltage: Between 9V and 16V</li>
+            <li>P-CAN communication: Active</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Threshold Value</td>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Time-out</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>&quot;BATTERY SENSOR&quot; data from ICU*: Not received</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Message error</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>&quot;BATTERY SENSOR&quot; data from ICU*: Abnormal</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Diagnostic Time</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Continuously for more than 2 sec.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">MIL</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>2nd Driving Cycle*</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S348247038620220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal"><span class="clsEmphBOLD">Driving Cycle*: DC </span></td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>When [IG ON→Engine ON→IG ON] is performed, complete the Driving Cycle* 1 time (1DC).</li>
+            <li>&quot;MIL&quot; means If a fault during the 1st DC is still detected in the 2nd DC, DTC is confirmed and the ECM* outputs &quot;MIL ON&quot;.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S348247038620220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+      <col span="1" id="COL3" align="left">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Component</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Name_ETM</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">ETM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Battery Monitor Module*</td>
+        <td valign="MIDDLE" rowspan="2" align="left" class="clsCellNormal">&quot;ICU JUNCTION BLOCK_IPS CONTROL MODULE&quot;</td>
+        <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">SD373-2</td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">ICU*</td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">ECM*</td>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">&quot;PCM/ECM&quot;</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

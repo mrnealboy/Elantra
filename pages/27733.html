@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC Information And Inspection: DTC Detecting Condition — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Brakes/">Brakes</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Brakes/Anti-Lock%20Brakes/">Anti-Lock Brakes</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24171.html">Abs/Esp Diagnosis (Except HEV) (1 Of 2)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24171.html#DTC%20C1260-02%3A%20Steering%20Angle%20Sensor%20Circuit-Signal/">DTC C1260-02: Steering Angle Sensor Circuit-Signal</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24171.html#DTC%20C1260-02%3A%20Steering%20Angle%20Sensor%20Circuit-Signal/DTC%20Information%20And%20Inspection/">DTC Information And Inspection</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/27733.html">DTC Detecting Condition</a></div><div class="main"><h1>DTC Information And Inspection: DTC Detecting Condition</h1><div id="S00203041542022071500000"><a name="S002030415420220715000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" align="left">
+      <col span="1" id="COL2" align="left">
+      <col span="1" id="COL3" align="left">
+      <col span="1" id="COL4" align="left">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Trouble Shooting</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Condition</th>
+        <th valign="MIDDLE" align="center" class="clsCellNormal">Possible cause</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">Main action</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Monitor the steering angle sensor signal</li>
+          </ul>
+        </td>
+        <td valign="MIDDLE" rowspan="7" align="left" class="clsCellNormal">
+          <ol class="ARABICNUM">
+            <li>Incorrect calibration of steering angle sensor (SAS)</li>
+            <li>Faulty steering angle sensor</li>
+            <li>Incorrect installation of SAS</li>
+            <li>Incorrect wheel alignment</li>
+            <li>SAS power supply failure</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" rowspan="3" align="center" class="clsCellNormal">Threshold value</td>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 1</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>A failure is detected when the steering wheel is out of the physical specific range for more than 600 milliseconds</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 2</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>A failure is detected when sensor values has changed more than 40 degree for more than 40 milliseconds</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 3</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>In case of straight and stable driving over 30 km/h (18.6 MPH), a failure is detected if it is more than 25° to difference between previous SAS offset and mean of estimated SAS offset.</li>
+            <li>A failure is detected when the fault signal of SAS Failsafe Logic is transmitted (SAS status), received SAS message's Alive counter fault, checksum value fault, or CRC fault<ul class="DASH">
+                <li>Driving or Control: 100 milliseconds</li>
+                <li>Standstill: 500 milliseconds</li>
+                <li>MDPS Initialization while standstill: 1 second</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="MIDDLE" align="center" class="clsCellNormal">MIL</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>ESP (ESC) warning lamp is activated</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" rowspan="2" align="center" class="clsCellNormal">Reset condition</td>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 1, 2</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>After ignition switch turned off and on again, driving the vehicle over 12 km/h (7.45 MPH) and SAS signal is in normal condition.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td valign="MIDDLE" align="center" class="clsCellNormal">Case 3</td>
+        <td valign="MIDDLE" align="left" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>After ignition switch turned OFF and ON, when SAS signal is normal.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Smart Key Reminder 2 — 2022 Hyundai Elantra N Line, Standard Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2022 Hyundai Elantra N Line, Standard Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Hyundai</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2022</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Elantra N Line, Standard Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24122.html">Smart Key System (Except HEV)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24122.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/24122.html#Description%20%26%20Operation/Operation/">Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/29601.html">Smart Key Reminder 2</a></div><div class="main"><h1>Smart Key Reminder 2</h1><div id="S39970345182022071500000">
+  <ol class="ARABICNUM">
+    <li>Preconditions:<p>All terminals OFF &amp; any door (including trunk) open &amp; no FOB-IN &amp; no locking status (checked by SMK periodically every 100 ms, as long as CAN/LIN active)</p>
+    </li>
+    <li>Vehicle action:<p>Closing last door or trunk with knobs locked state, or with a locking in progress</p>
+    </li>
+    <li>SMK actions:<p>Before elapsing 500 ms after the closing if all doors are locked then:</p>
+      <ul class="BULLET">
+        <li>IF NO FOB-IN ACTIVE<p>SMK performs a search for the fobs in the interior of the vehicle.</p>
+          <p>The same LF-strategy has to be used as it is defined for the ID out warning (registering only, no authentication)</p>
+        </li>
+        <li>IF FOB-IN ACTIVE<p>SMK search valid TP</p>
+          <p>If no fob has been found, no action is required.</p>
+          <p>If any valid fob or valid TP has been found, SMK sends unlock command via CAN and activates ext. buzzer warning.</p>
+          <p>If any valid fob has been found, SMK sends unlock command via CAN/LIN and activates ext. buzzer warning.</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>
